@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/SmaCoViLanguage/src-gen" creationIcons="false"
+    editDirectory="/SmaCoViLanguage.edit/src-gen" editorDirectory="/SmaCoViLanguage.editor/src-gen"
+    modelPluginID="SmaCoViLanguage" modelName="SmaCoViLanguage" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>smaCoViLanguage.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="SmaCoViLanguage" disposableProviderFactory="true" ecorePackage="smaCoViLanguage.ecore#/">
+    <genClasses ecoreClass="smaCoViLanguage.ecore#//SmartContract">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smaCoViLanguage.ecore#//SmartContract/term"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smaCoViLanguage.ecore#//SmartContract/Name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smaCoViLanguage.ecore#//SmartContract/Owner"/>
+    </genClasses>
+    <genClasses ecoreClass="smaCoViLanguage.ecore#//Term">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smaCoViLanguage.ecore#//Term/attribute"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smaCoViLanguage.ecore#//Term/deotonics"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smaCoViLanguage.ecore#//Term/aims"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smaCoViLanguage.ecore#//Term/conditions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smaCoViLanguage.ecore#//Term/orelse"/>
+    </genClasses>
+    <genClasses ecoreClass="smaCoViLanguage.ecore#//Attribute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smaCoViLanguage.ecore#//Attribute/AttributeName"/>
+    </genClasses>
+    <genClasses ecoreClass="smaCoViLanguage.ecore#//Deotonic">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smaCoViLanguage.ecore#//Deotonic/Type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smaCoViLanguage.ecore#//Deotonic/Deotonic"/>
+    </genClasses>
+    <genClasses ecoreClass="smaCoViLanguage.ecore#//Condition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smaCoViLanguage.ecore#//Condition/Condition"/>
+    </genClasses>
+    <genClasses ecoreClass="smaCoViLanguage.ecore#//Aim">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smaCoViLanguage.ecore#//Aim/Type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smaCoViLanguage.ecore#//Aim/Aim"/>
+    </genClasses>
+    <genClasses ecoreClass="smaCoViLanguage.ecore#//OrElse">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smaCoViLanguage.ecore#//OrElse/Consequence"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
