@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated smaCoViLanguage -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="smaCoViLanguage.presentation.SmaCoViLanguageModelWizardID"
+            name="%_UI_SmaCoViLanguageModelWizard_label"
+            class="smaCoViLanguage.presentation.SmaCoViLanguageModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/SmaCoViLanguageModelFile.gif">
+         <description>%_UI_SmaCoViLanguageModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated smaCoViLanguage -->
+      <editor
+            id="smaCoViLanguage.presentation.SmaCoViLanguageEditorID"
+            name="%_UI_SmaCoViLanguageEditor_label"
+            icon="icons/full/obj16/SmaCoViLanguageModelFile.gif"
+            extensions="smacovilanguage"
+            class="smaCoViLanguage.presentation.SmaCoViLanguageEditor"
+            contributorClass="smaCoViLanguage.presentation.SmaCoViLanguageActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
