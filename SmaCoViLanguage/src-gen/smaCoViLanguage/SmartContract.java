@@ -2,8 +2,6 @@
  */
 package smaCoViLanguage;
 
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -15,32 +13,15 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link smaCoViLanguage.SmartContract#getTerm <em>Term</em>}</li>
  *   <li>{@link smaCoViLanguage.SmartContract#getName <em>Name</em>}</li>
  *   <li>{@link smaCoViLanguage.SmartContract#getOwner <em>Owner</em>}</li>
  * </ul>
  *
  * @see smaCoViLanguage.SmaCoViLanguagePackage#getSmartContract()
- * @model
+ * @model abstract="true"
  * @generated
  */
 public interface SmartContract extends EObject {
-	/**
-	 * Returns the value of the '<em><b>Term</b></em>' containment reference list.
-	 * The list contents are of type {@link smaCoViLanguage.Term}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Term</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Term</em>' containment reference list.
-	 * @see smaCoViLanguage.SmaCoViLanguagePackage#getSmartContract_Term()
-	 * @model containment="true" required="true"
-	 * @generated
-	 */
-	EList<Term> getTerm();
-
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->

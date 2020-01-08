@@ -56,8 +56,6 @@ public class SmaCoViLanguageFactoryImpl extends EFactoryImpl implements SmaCoViL
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-		case SmaCoViLanguagePackage.SMART_CONTRACT:
-			return createSmartContract();
 		case SmaCoViLanguagePackage.TERM:
 			return createTerm();
 		case SmaCoViLanguagePackage.ATTRIBUTE:
@@ -73,16 +71,6 @@ public class SmaCoViLanguageFactoryImpl extends EFactoryImpl implements SmaCoViL
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public SmartContract createSmartContract() {
-		SmartContractImpl smartContract = new SmartContractImpl();
-		return smartContract;
 	}
 
 	/**

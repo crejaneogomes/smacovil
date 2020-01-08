@@ -7,8 +7,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
 import smaCoViLanguage.Condition;
 import smaCoViLanguage.SmaCoViLanguagePackage;
 
@@ -25,7 +23,7 @@ import smaCoViLanguage.SmaCoViLanguagePackage;
  *
  * @generated
  */
-public class ConditionImpl extends MinimalEObjectImpl.Container implements Condition {
+public class ConditionImpl extends AdicoImpl implements Condition {
 	/**
 	 * The default value of the '{@link #getCondition() <em>Condition</em>}' attribute.
 	 * <!-- begin-user-doc -->

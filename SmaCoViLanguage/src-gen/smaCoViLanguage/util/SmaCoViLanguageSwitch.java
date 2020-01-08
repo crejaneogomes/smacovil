@@ -77,12 +77,18 @@ public class SmaCoViLanguageSwitch<T> extends Switch<T> {
 			Term term = (Term) theEObject;
 			T result = caseTerm(term);
 			if (result == null)
+				result = caseSmartContract(term);
+			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
 		case SmaCoViLanguagePackage.ATTRIBUTE: {
 			Attribute attribute = (Attribute) theEObject;
 			T result = caseAttribute(attribute);
+			if (result == null)
+				result = caseAdico(attribute);
+			if (result == null)
+				result = caseSmartContract(attribute);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -91,12 +97,20 @@ public class SmaCoViLanguageSwitch<T> extends Switch<T> {
 			Deotonic deotonic = (Deotonic) theEObject;
 			T result = caseDeotonic(deotonic);
 			if (result == null)
+				result = caseAdico(deotonic);
+			if (result == null)
+				result = caseSmartContract(deotonic);
+			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
 		case SmaCoViLanguagePackage.CONDITION: {
 			Condition condition = (Condition) theEObject;
 			T result = caseCondition(condition);
+			if (result == null)
+				result = caseAdico(condition);
+			if (result == null)
+				result = caseSmartContract(condition);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -105,12 +119,29 @@ public class SmaCoViLanguageSwitch<T> extends Switch<T> {
 			Aim aim = (Aim) theEObject;
 			T result = caseAim(aim);
 			if (result == null)
+				result = caseAdico(aim);
+			if (result == null)
+				result = caseSmartContract(aim);
+			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
 		case SmaCoViLanguagePackage.OR_ELSE: {
 			OrElse orElse = (OrElse) theEObject;
 			T result = caseOrElse(orElse);
+			if (result == null)
+				result = caseAdico(orElse);
+			if (result == null)
+				result = caseSmartContract(orElse);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case SmaCoViLanguagePackage.ADICO: {
+			Adico adico = (Adico) theEObject;
+			T result = caseAdico(adico);
+			if (result == null)
+				result = caseSmartContract(adico);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -222,6 +253,21 @@ public class SmaCoViLanguageSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseOrElse(OrElse object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Adico</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Adico</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAdico(Adico object) {
 		return null;
 	}
 

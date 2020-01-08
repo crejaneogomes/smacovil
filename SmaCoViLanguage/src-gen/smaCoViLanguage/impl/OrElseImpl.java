@@ -7,8 +7,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
 import smaCoViLanguage.OrElse;
 import smaCoViLanguage.SmaCoViLanguagePackage;
 
@@ -25,7 +23,7 @@ import smaCoViLanguage.SmaCoViLanguagePackage;
  *
  * @generated
  */
-public class OrElseImpl extends MinimalEObjectImpl.Container implements OrElse {
+public class OrElseImpl extends AdicoImpl implements OrElse {
 	/**
 	 * The default value of the '{@link #getConsequence() <em>Consequence</em>}' attribute.
 	 * <!-- begin-user-doc -->

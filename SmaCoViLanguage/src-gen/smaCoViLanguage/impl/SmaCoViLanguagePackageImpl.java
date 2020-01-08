@@ -11,6 +11,7 @@ import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 import org.eclipse.emf.ecore.xml.type.XMLTypePackage;
 
+import smaCoViLanguage.Adico;
 import smaCoViLanguage.Aim;
 import smaCoViLanguage.Attribute;
 import smaCoViLanguage.Condition;
@@ -76,6 +77,13 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 	 * @generated
 	 */
 	private EClass orElseEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass adicoEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -158,17 +166,8 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getSmartContract_Term() {
-		return (EReference) smartContractEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getSmartContract_Name() {
-		return (EAttribute) smartContractEClass.getEStructuralFeatures().get(1);
+		return (EAttribute) smartContractEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -177,7 +176,7 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 	 * @generated
 	 */
 	public EAttribute getSmartContract_Owner() {
-		return (EAttribute) smartContractEClass.getEStructuralFeatures().get(2);
+		return (EAttribute) smartContractEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -194,44 +193,8 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getTerm_Attribute() {
+	public EReference getTerm_Smartcontract() {
 		return (EReference) termEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getTerm_Deotonics() {
-		return (EReference) termEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getTerm_Aims() {
-		return (EReference) termEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getTerm_Conditions() {
-		return (EReference) termEClass.getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getTerm_Orelse() {
-		return (EReference) termEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -347,6 +310,15 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getAdico() {
+		return adicoEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public SmaCoViLanguageFactory getSmaCoViLanguageFactory() {
 		return (SmaCoViLanguageFactory) getEFactoryInstance();
 	}
@@ -372,16 +344,11 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 
 		// Create classes and their features
 		smartContractEClass = createEClass(SMART_CONTRACT);
-		createEReference(smartContractEClass, SMART_CONTRACT__TERM);
 		createEAttribute(smartContractEClass, SMART_CONTRACT__NAME);
 		createEAttribute(smartContractEClass, SMART_CONTRACT__OWNER);
 
 		termEClass = createEClass(TERM);
-		createEReference(termEClass, TERM__ATTRIBUTE);
-		createEReference(termEClass, TERM__DEOTONICS);
-		createEReference(termEClass, TERM__AIMS);
-		createEReference(termEClass, TERM__CONDITIONS);
-		createEReference(termEClass, TERM__ORELSE);
+		createEReference(termEClass, TERM__SMARTCONTRACT);
 
 		attributeEClass = createEClass(ATTRIBUTE);
 		createEAttribute(attributeEClass, ATTRIBUTE__ATTRIBUTE_NAME);
@@ -399,6 +366,8 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 
 		orElseEClass = createEClass(OR_ELSE);
 		createEAttribute(orElseEClass, OR_ELSE__CONSEQUENCE);
+
+		adicoEClass = createEClass(ADICO);
 	}
 
 	/**
@@ -434,13 +403,17 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
+		termEClass.getESuperTypes().add(this.getSmartContract());
+		attributeEClass.getESuperTypes().add(this.getAdico());
+		deotonicEClass.getESuperTypes().add(this.getAdico());
+		conditionEClass.getESuperTypes().add(this.getAdico());
+		aimEClass.getESuperTypes().add(this.getAdico());
+		orElseEClass.getESuperTypes().add(this.getAdico());
+		adicoEClass.getESuperTypes().add(this.getSmartContract());
 
 		// Initialize classes, features, and operations; add parameters
-		initEClass(smartContractEClass, SmartContract.class, "SmartContract", !IS_ABSTRACT, !IS_INTERFACE,
+		initEClass(smartContractEClass, SmartContract.class, "SmartContract", IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getSmartContract_Term(), this.getTerm(), null, "term", null, 1, -1, SmartContract.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
-				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getSmartContract_Name(), theXMLTypePackage.getString(), "Name", null, 0, 1, SmartContract.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getSmartContract_Owner(), theXMLTypePackage.getString(), "Owner", null, 0, 1,
@@ -448,21 +421,9 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 				!IS_DERIVED, IS_ORDERED);
 
 		initEClass(termEClass, Term.class, "Term", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTerm_Attribute(), this.getAttribute(), null, "attribute", null, 0, -1, Term.class,
+		initEReference(getTerm_Smartcontract(), this.getSmartContract(), null, "smartcontract", null, 0, -1, Term.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getTerm_Deotonics(), this.getDeotonic(), null, "deotonics", null, 0, -1, Term.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
-				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getTerm_Aims(), this.getAim(), null, "aims", null, 0, -1, Term.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
-				IS_ORDERED);
-		initEReference(getTerm_Conditions(), this.getCondition(), null, "conditions", null, 0, -1, Term.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
-				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getTerm_Orelse(), this.getOrElse(), null, "orelse", null, 0, -1, Term.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
-				IS_ORDERED);
 
 		initEClass(attributeEClass, Attribute.class, "Attribute", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -492,6 +453,8 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 		initEClass(orElseEClass, OrElse.class, "OrElse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getOrElse_Consequence(), theXMLTypePackage.getString(), "Consequence", null, 0, 1, OrElse.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(adicoEClass, Adico.class, "Adico", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);

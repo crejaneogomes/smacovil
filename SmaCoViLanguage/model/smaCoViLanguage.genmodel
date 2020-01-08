@@ -33,5 +33,6 @@
     <genClasses ecoreClass="smaCoViLanguage.ecore#//OrElse">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smaCoViLanguage.ecore#//OrElse/Consequence"/>
     </genClasses>
+    <genClasses ecoreClass="smaCoViLanguage.ecore#//Adico"/>
   </genPackages>
 </genmodel:GenModel>

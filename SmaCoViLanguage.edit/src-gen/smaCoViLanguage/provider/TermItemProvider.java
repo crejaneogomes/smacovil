@@ -7,18 +7,8 @@ import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
-import org.eclipse.emf.common.util.ResourceLocator;
-
 import org.eclipse.emf.ecore.EStructuralFeature;
-
-import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
-import org.eclipse.emf.edit.provider.IItemLabelProvider;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
-import org.eclipse.emf.edit.provider.IItemPropertySource;
-import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
-import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
-import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
 import smaCoViLanguage.SmaCoViLanguageFactory;
@@ -31,8 +21,7 @@ import smaCoViLanguage.Term;
  * <!-- end-user-doc -->
  * @generated
  */
-public class TermItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class TermItemProvider extends SmartContractItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
@@ -70,11 +59,7 @@ public class TermItemProvider extends ItemProviderAdapter implements IEditingDom
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(SmaCoViLanguagePackage.Literals.TERM__ATTRIBUTE);
-			childrenFeatures.add(SmaCoViLanguagePackage.Literals.TERM__DEOTONICS);
-			childrenFeatures.add(SmaCoViLanguagePackage.Literals.TERM__AIMS);
-			childrenFeatures.add(SmaCoViLanguagePackage.Literals.TERM__CONDITIONS);
-			childrenFeatures.add(SmaCoViLanguagePackage.Literals.TERM__ORELSE);
+			childrenFeatures.add(SmaCoViLanguagePackage.Literals.TERM__SMARTCONTRACT);
 		}
 		return childrenFeatures;
 	}
@@ -121,7 +106,9 @@ public class TermItemProvider extends ItemProviderAdapter implements IEditingDom
 	 */
 	@Override
 	public String getText(Object object) {
-		return getString("_UI_Term_type");
+		String label = ((Term) object).getName();
+		return label == null || label.length() == 0 ? getString("_UI_Term_type")
+				: getString("_UI_Term_type") + " " + label;
 	}
 
 	/**
@@ -136,11 +123,7 @@ public class TermItemProvider extends ItemProviderAdapter implements IEditingDom
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Term.class)) {
-		case SmaCoViLanguagePackage.TERM__ATTRIBUTE:
-		case SmaCoViLanguagePackage.TERM__DEOTONICS:
-		case SmaCoViLanguagePackage.TERM__AIMS:
-		case SmaCoViLanguagePackage.TERM__CONDITIONS:
-		case SmaCoViLanguagePackage.TERM__ORELSE:
+		case SmaCoViLanguagePackage.TERM__SMARTCONTRACT:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 			return;
 		}
@@ -158,31 +141,23 @@ public class TermItemProvider extends ItemProviderAdapter implements IEditingDom
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-		newChildDescriptors.add(createChildParameter(SmaCoViLanguagePackage.Literals.TERM__ATTRIBUTE,
+		newChildDescriptors.add(createChildParameter(SmaCoViLanguagePackage.Literals.TERM__SMARTCONTRACT,
+				SmaCoViLanguageFactory.eINSTANCE.createTerm()));
+
+		newChildDescriptors.add(createChildParameter(SmaCoViLanguagePackage.Literals.TERM__SMARTCONTRACT,
 				SmaCoViLanguageFactory.eINSTANCE.createAttribute()));
 
-		newChildDescriptors.add(createChildParameter(SmaCoViLanguagePackage.Literals.TERM__DEOTONICS,
+		newChildDescriptors.add(createChildParameter(SmaCoViLanguagePackage.Literals.TERM__SMARTCONTRACT,
 				SmaCoViLanguageFactory.eINSTANCE.createDeotonic()));
 
-		newChildDescriptors.add(createChildParameter(SmaCoViLanguagePackage.Literals.TERM__AIMS,
-				SmaCoViLanguageFactory.eINSTANCE.createAim()));
-
-		newChildDescriptors.add(createChildParameter(SmaCoViLanguagePackage.Literals.TERM__CONDITIONS,
+		newChildDescriptors.add(createChildParameter(SmaCoViLanguagePackage.Literals.TERM__SMARTCONTRACT,
 				SmaCoViLanguageFactory.eINSTANCE.createCondition()));
 
-		newChildDescriptors.add(createChildParameter(SmaCoViLanguagePackage.Literals.TERM__ORELSE,
-				SmaCoViLanguageFactory.eINSTANCE.createOrElse()));
-	}
+		newChildDescriptors.add(createChildParameter(SmaCoViLanguagePackage.Literals.TERM__SMARTCONTRACT,
+				SmaCoViLanguageFactory.eINSTANCE.createAim()));
 
-	/**
-	 * Return the resource locator for this item provider's resources.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ResourceLocator getResourceLocator() {
-		return SmaCoViLanguageEditPlugin.INSTANCE;
+		newChildDescriptors.add(createChildParameter(SmaCoViLanguagePackage.Literals.TERM__SMARTCONTRACT,
+				SmaCoViLanguageFactory.eINSTANCE.createOrElse()));
 	}
 
 }

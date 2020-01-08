@@ -2,25 +2,12 @@
  */
 package smaCoViLanguage.impl;
 
-import java.util.Collection;
-
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.notify.NotificationChain;
-
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
-import org.eclipse.emf.ecore.util.EObjectContainmentEList;
-import org.eclipse.emf.ecore.util.InternalEList;
-
 import smaCoViLanguage.SmaCoViLanguagePackage;
 import smaCoViLanguage.SmartContract;
-import smaCoViLanguage.Term;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,24 +17,13 @@ import smaCoViLanguage.Term;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link smaCoViLanguage.impl.SmartContractImpl#getTerm <em>Term</em>}</li>
  *   <li>{@link smaCoViLanguage.impl.SmartContractImpl#getName <em>Name</em>}</li>
  *   <li>{@link smaCoViLanguage.impl.SmartContractImpl#getOwner <em>Owner</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class SmartContractImpl extends MinimalEObjectImpl.Container implements SmartContract {
-	/**
-	 * The cached value of the '{@link #getTerm() <em>Term</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getTerm()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<Term> term;
-
+public abstract class SmartContractImpl extends MinimalEObjectImpl.Container implements SmartContract {
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -112,18 +88,6 @@ public class SmartContractImpl extends MinimalEObjectImpl.Container implements S
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Term> getTerm() {
-		if (term == null) {
-			term = new EObjectContainmentEList<Term>(Term.class, this, SmaCoViLanguagePackage.SMART_CONTRACT__TERM);
-		}
-		return term;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public String getName() {
 		return name;
 	}
@@ -169,24 +133,8 @@ public class SmartContractImpl extends MinimalEObjectImpl.Container implements S
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-		case SmaCoViLanguagePackage.SMART_CONTRACT__TERM:
-			return ((InternalEList<?>) getTerm()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case SmaCoViLanguagePackage.SMART_CONTRACT__TERM:
-			return getTerm();
 		case SmaCoViLanguagePackage.SMART_CONTRACT__NAME:
 			return getName();
 		case SmaCoViLanguagePackage.SMART_CONTRACT__OWNER:
@@ -204,10 +152,6 @@ public class SmartContractImpl extends MinimalEObjectImpl.Container implements S
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case SmaCoViLanguagePackage.SMART_CONTRACT__TERM:
-			getTerm().clear();
-			getTerm().addAll((Collection<? extends Term>) newValue);
-			return;
 		case SmaCoViLanguagePackage.SMART_CONTRACT__NAME:
 			setName((String) newValue);
 			return;
@@ -226,9 +170,6 @@ public class SmartContractImpl extends MinimalEObjectImpl.Container implements S
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case SmaCoViLanguagePackage.SMART_CONTRACT__TERM:
-			getTerm().clear();
-			return;
 		case SmaCoViLanguagePackage.SMART_CONTRACT__NAME:
 			setName(NAME_EDEFAULT);
 			return;
@@ -247,8 +188,6 @@ public class SmartContractImpl extends MinimalEObjectImpl.Container implements S
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case SmaCoViLanguagePackage.SMART_CONTRACT__TERM:
-			return term != null && !term.isEmpty();
 		case SmaCoViLanguagePackage.SMART_CONTRACT__NAME:
 			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 		case SmaCoViLanguagePackage.SMART_CONTRACT__OWNER:

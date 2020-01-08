@@ -22,15 +22,6 @@ public interface SmaCoViLanguageFactory extends EFactory {
 	SmaCoViLanguageFactory eINSTANCE = smaCoViLanguage.impl.SmaCoViLanguageFactoryImpl.init();
 
 	/**
-	 * Returns a new object of class '<em>Smart Contract</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Smart Contract</em>'.
-	 * @generated
-	 */
-	SmartContract createSmartContract();
-
-	/**
 	 * Returns a new object of class '<em>Term</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

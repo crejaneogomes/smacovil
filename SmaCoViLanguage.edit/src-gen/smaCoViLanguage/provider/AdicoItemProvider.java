@@ -7,28 +7,25 @@ import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
-import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
-import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
-import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import smaCoViLanguage.Condition;
-import smaCoViLanguage.SmaCoViLanguagePackage;
+import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
+
+import smaCoViLanguage.Adico;
 
 /**
- * This is the item provider adapter for a {@link smaCoViLanguage.Condition} object.
+ * This is the item provider adapter for a {@link smaCoViLanguage.Adico} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class ConditionItemProvider extends AdicoItemProvider {
+public class AdicoItemProvider extends SmartContractItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ConditionItemProvider(AdapterFactory adapterFactory) {
+	public AdicoItemProvider(AdapterFactory adapterFactory) {
 		super(adapterFactory);
 	}
 
@@ -43,36 +40,19 @@ public class ConditionItemProvider extends AdicoItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addConditionPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
 
 	/**
-	 * This adds a property descriptor for the Condition feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addConditionPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_Condition_Condition_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_Condition_Condition_feature",
-								"_UI_Condition_type"),
-						SmaCoViLanguagePackage.Literals.CONDITION__CONDITION, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
-	}
-
-	/**
-	 * This returns Condition.gif.
+	 * This returns Adico.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/Condition"));
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/Adico"));
 	}
 
 	/**
@@ -93,9 +73,9 @@ public class ConditionItemProvider extends AdicoItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((Condition) object).getName();
-		return label == null || label.length() == 0 ? getString("_UI_Condition_type")
-				: getString("_UI_Condition_type") + " " + label;
+		String label = ((Adico) object).getName();
+		return label == null || label.length() == 0 ? getString("_UI_Adico_type")
+				: getString("_UI_Adico_type") + " " + label;
 	}
 
 	/**
@@ -108,12 +88,6 @@ public class ConditionItemProvider extends AdicoItemProvider {
 	@Override
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
-
-		switch (notification.getFeatureID(Condition.class)) {
-		case SmaCoViLanguagePackage.CONDITION__CONDITION:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
-			return;
-		}
 		super.notifyChanged(notification);
 	}
 

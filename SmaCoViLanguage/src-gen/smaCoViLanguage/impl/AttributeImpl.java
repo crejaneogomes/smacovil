@@ -7,8 +7,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
 import smaCoViLanguage.Attribute;
 import smaCoViLanguage.SmaCoViLanguagePackage;
 
@@ -25,7 +23,7 @@ import smaCoViLanguage.SmaCoViLanguagePackage;
  *
  * @generated
  */
-public class AttributeImpl extends MinimalEObjectImpl.Container implements Attribute {
+public class AttributeImpl extends AdicoImpl implements Attribute {
 	/**
 	 * The default value of the '{@link #getAttributeName() <em>Attribute Name</em>}' attribute.
 	 * <!-- begin-user-doc -->

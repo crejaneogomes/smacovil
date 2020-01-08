@@ -67,22 +67,13 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	int SMART_CONTRACT = 0;
 
 	/**
-	 * The feature id for the '<em><b>Term</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SMART_CONTRACT__TERM = 0;
-
-	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SMART_CONTRACT__NAME = 1;
+	int SMART_CONTRACT__NAME = 0;
 
 	/**
 	 * The feature id for the '<em><b>Owner</b></em>' attribute.
@@ -91,7 +82,7 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SMART_CONTRACT__OWNER = 2;
+	int SMART_CONTRACT__OWNER = 1;
 
 	/**
 	 * The number of structural features of the '<em>Smart Contract</em>' class.
@@ -100,7 +91,7 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SMART_CONTRACT_FEATURE_COUNT = 3;
+	int SMART_CONTRACT_FEATURE_COUNT = 2;
 
 	/**
 	 * The number of operations of the '<em>Smart Contract</em>' class.
@@ -122,49 +113,31 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	int TERM = 1;
 
 	/**
-	 * The feature id for the '<em><b>Attribute</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERM__ATTRIBUTE = 0;
+	int TERM__NAME = SMART_CONTRACT__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Deotonics</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Owner</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERM__DEOTONICS = 1;
+	int TERM__OWNER = SMART_CONTRACT__OWNER;
 
 	/**
-	 * The feature id for the '<em><b>Aims</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Smartcontract</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERM__AIMS = 2;
-
-	/**
-	 * The feature id for the '<em><b>Conditions</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TERM__CONDITIONS = 3;
-
-	/**
-	 * The feature id for the '<em><b>Orelse</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TERM__ORELSE = 4;
+	int TERM__SMARTCONTRACT = SMART_CONTRACT_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Term</em>' class.
@@ -173,7 +146,7 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERM_FEATURE_COUNT = 5;
+	int TERM_FEATURE_COUNT = SMART_CONTRACT_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Term</em>' class.
@@ -182,7 +155,53 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERM_OPERATION_COUNT = 0;
+	int TERM_OPERATION_COUNT = SMART_CONTRACT_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link smaCoViLanguage.impl.AdicoImpl <em>Adico</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see smaCoViLanguage.impl.AdicoImpl
+	 * @see smaCoViLanguage.impl.SmaCoViLanguagePackageImpl#getAdico()
+	 * @generated
+	 */
+	int ADICO = 7;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADICO__NAME = SMART_CONTRACT__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Owner</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADICO__OWNER = SMART_CONTRACT__OWNER;
+
+	/**
+	 * The number of structural features of the '<em>Adico</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADICO_FEATURE_COUNT = SMART_CONTRACT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Adico</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADICO_OPERATION_COUNT = SMART_CONTRACT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link smaCoViLanguage.impl.AttributeImpl <em>Attribute</em>}' class.
@@ -195,13 +214,31 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	int ATTRIBUTE = 2;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE__NAME = ADICO__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Owner</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE__OWNER = ADICO__OWNER;
+
+	/**
 	 * The feature id for the '<em><b>Attribute Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ATTRIBUTE__ATTRIBUTE_NAME = 0;
+	int ATTRIBUTE__ATTRIBUTE_NAME = ADICO_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Attribute</em>' class.
@@ -210,7 +247,7 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ATTRIBUTE_FEATURE_COUNT = 1;
+	int ATTRIBUTE_FEATURE_COUNT = ADICO_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Attribute</em>' class.
@@ -219,7 +256,7 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ATTRIBUTE_OPERATION_COUNT = 0;
+	int ATTRIBUTE_OPERATION_COUNT = ADICO_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link smaCoViLanguage.impl.DeotonicImpl <em>Deotonic</em>}' class.
@@ -232,13 +269,31 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	int DEOTONIC = 3;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEOTONIC__NAME = ADICO__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Owner</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEOTONIC__OWNER = ADICO__OWNER;
+
+	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DEOTONIC__TYPE = 0;
+	int DEOTONIC__TYPE = ADICO_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Deotonic</b></em>' attribute.
@@ -247,7 +302,7 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEOTONIC__DEOTONIC = 1;
+	int DEOTONIC__DEOTONIC = ADICO_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Deotonic</em>' class.
@@ -256,7 +311,7 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEOTONIC_FEATURE_COUNT = 2;
+	int DEOTONIC_FEATURE_COUNT = ADICO_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>Deotonic</em>' class.
@@ -265,7 +320,7 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEOTONIC_OPERATION_COUNT = 0;
+	int DEOTONIC_OPERATION_COUNT = ADICO_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link smaCoViLanguage.impl.ConditionImpl <em>Condition</em>}' class.
@@ -278,13 +333,31 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	int CONDITION = 4;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITION__NAME = ADICO__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Owner</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITION__OWNER = ADICO__OWNER;
+
+	/**
 	 * The feature id for the '<em><b>Condition</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONDITION__CONDITION = 0;
+	int CONDITION__CONDITION = ADICO_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Condition</em>' class.
@@ -293,7 +366,7 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONDITION_FEATURE_COUNT = 1;
+	int CONDITION_FEATURE_COUNT = ADICO_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Condition</em>' class.
@@ -302,7 +375,7 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONDITION_OPERATION_COUNT = 0;
+	int CONDITION_OPERATION_COUNT = ADICO_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link smaCoViLanguage.impl.AimImpl <em>Aim</em>}' class.
@@ -315,13 +388,31 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	int AIM = 5;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AIM__NAME = ADICO__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Owner</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AIM__OWNER = ADICO__OWNER;
+
+	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AIM__TYPE = 0;
+	int AIM__TYPE = ADICO_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Aim</b></em>' attribute.
@@ -330,7 +421,7 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AIM__AIM = 1;
+	int AIM__AIM = ADICO_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Aim</em>' class.
@@ -339,7 +430,7 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AIM_FEATURE_COUNT = 2;
+	int AIM_FEATURE_COUNT = ADICO_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>Aim</em>' class.
@@ -348,7 +439,7 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AIM_OPERATION_COUNT = 0;
+	int AIM_OPERATION_COUNT = ADICO_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link smaCoViLanguage.impl.OrElseImpl <em>Or Else</em>}' class.
@@ -361,13 +452,31 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	int OR_ELSE = 6;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OR_ELSE__NAME = ADICO__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Owner</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OR_ELSE__OWNER = ADICO__OWNER;
+
+	/**
 	 * The feature id for the '<em><b>Consequence</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int OR_ELSE__CONSEQUENCE = 0;
+	int OR_ELSE__CONSEQUENCE = ADICO_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Or Else</em>' class.
@@ -376,7 +485,7 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OR_ELSE_FEATURE_COUNT = 1;
+	int OR_ELSE_FEATURE_COUNT = ADICO_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Or Else</em>' class.
@@ -385,7 +494,7 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OR_ELSE_OPERATION_COUNT = 0;
+	int OR_ELSE_OPERATION_COUNT = ADICO_OPERATION_COUNT + 0;
 
 	/**
 	 * Returns the meta object for class '{@link smaCoViLanguage.SmartContract <em>Smart Contract</em>}'.
@@ -396,17 +505,6 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	 * @generated
 	 */
 	EClass getSmartContract();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link smaCoViLanguage.SmartContract#getTerm <em>Term</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Term</em>'.
-	 * @see smaCoViLanguage.SmartContract#getTerm()
-	 * @see #getSmartContract()
-	 * @generated
-	 */
-	EReference getSmartContract_Term();
 
 	/**
 	 * Returns the meta object for the attribute '{@link smaCoViLanguage.SmartContract#getName <em>Name</em>}'.
@@ -441,59 +539,15 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	EClass getTerm();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link smaCoViLanguage.Term#getAttribute <em>Attribute</em>}'.
+	 * Returns the meta object for the containment reference list '{@link smaCoViLanguage.Term#getSmartcontract <em>Smartcontract</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Attribute</em>'.
-	 * @see smaCoViLanguage.Term#getAttribute()
+	 * @return the meta object for the containment reference list '<em>Smartcontract</em>'.
+	 * @see smaCoViLanguage.Term#getSmartcontract()
 	 * @see #getTerm()
 	 * @generated
 	 */
-	EReference getTerm_Attribute();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link smaCoViLanguage.Term#getDeotonics <em>Deotonics</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Deotonics</em>'.
-	 * @see smaCoViLanguage.Term#getDeotonics()
-	 * @see #getTerm()
-	 * @generated
-	 */
-	EReference getTerm_Deotonics();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link smaCoViLanguage.Term#getAims <em>Aims</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Aims</em>'.
-	 * @see smaCoViLanguage.Term#getAims()
-	 * @see #getTerm()
-	 * @generated
-	 */
-	EReference getTerm_Aims();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link smaCoViLanguage.Term#getConditions <em>Conditions</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Conditions</em>'.
-	 * @see smaCoViLanguage.Term#getConditions()
-	 * @see #getTerm()
-	 * @generated
-	 */
-	EReference getTerm_Conditions();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link smaCoViLanguage.Term#getOrelse <em>Orelse</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Orelse</em>'.
-	 * @see smaCoViLanguage.Term#getOrelse()
-	 * @see #getTerm()
-	 * @generated
-	 */
-	EReference getTerm_Orelse();
+	EReference getTerm_Smartcontract();
 
 	/**
 	 * Returns the meta object for class '{@link smaCoViLanguage.Attribute <em>Attribute</em>}'.
@@ -623,6 +677,16 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	EAttribute getOrElse_Consequence();
 
 	/**
+	 * Returns the meta object for class '{@link smaCoViLanguage.Adico <em>Adico</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Adico</em>'.
+	 * @see smaCoViLanguage.Adico
+	 * @generated
+	 */
+	EClass getAdico();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -656,14 +720,6 @@ public interface SmaCoViLanguagePackage extends EPackage {
 		EClass SMART_CONTRACT = eINSTANCE.getSmartContract();
 
 		/**
-		 * The meta object literal for the '<em><b>Term</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference SMART_CONTRACT__TERM = eINSTANCE.getSmartContract_Term();
-
-		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -690,44 +746,12 @@ public interface SmaCoViLanguagePackage extends EPackage {
 		EClass TERM = eINSTANCE.getTerm();
 
 		/**
-		 * The meta object literal for the '<em><b>Attribute</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Smartcontract</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference TERM__ATTRIBUTE = eINSTANCE.getTerm_Attribute();
-
-		/**
-		 * The meta object literal for the '<em><b>Deotonics</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference TERM__DEOTONICS = eINSTANCE.getTerm_Deotonics();
-
-		/**
-		 * The meta object literal for the '<em><b>Aims</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference TERM__AIMS = eINSTANCE.getTerm_Aims();
-
-		/**
-		 * The meta object literal for the '<em><b>Conditions</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference TERM__CONDITIONS = eINSTANCE.getTerm_Conditions();
-
-		/**
-		 * The meta object literal for the '<em><b>Orelse</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference TERM__ORELSE = eINSTANCE.getTerm_Orelse();
+		EReference TERM__SMARTCONTRACT = eINSTANCE.getTerm_Smartcontract();
 
 		/**
 		 * The meta object literal for the '{@link smaCoViLanguage.impl.AttributeImpl <em>Attribute</em>}' class.
@@ -834,6 +858,16 @@ public interface SmaCoViLanguagePackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute OR_ELSE__CONSEQUENCE = eINSTANCE.getOrElse_Consequence();
+
+		/**
+		 * The meta object literal for the '{@link smaCoViLanguage.impl.AdicoImpl <em>Adico</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see smaCoViLanguage.impl.AdicoImpl
+		 * @see smaCoViLanguage.impl.SmaCoViLanguagePackageImpl#getAdico()
+		 * @generated
+		 */
+		EClass ADICO = eINSTANCE.getAdico();
 
 	}
 

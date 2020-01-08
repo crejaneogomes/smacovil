@@ -73,29 +73,6 @@ public class SmaCoViLanguageItemProviderAdapterFactory extends SmaCoViLanguageAd
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link smaCoViLanguage.SmartContract} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected SmartContractItemProvider smartContractItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link smaCoViLanguage.SmartContract}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createSmartContractAdapter() {
-		if (smartContractItemProvider == null) {
-			smartContractItemProvider = new SmartContractItemProvider(this);
-		}
-
-		return smartContractItemProvider;
-	}
-
-	/**
 	 * This keeps track of the one adapter used for all {@link smaCoViLanguage.Term} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -332,8 +309,6 @@ public class SmaCoViLanguageItemProviderAdapterFactory extends SmaCoViLanguageAd
 	 * @generated
 	 */
 	public void dispose() {
-		if (smartContractItemProvider != null)
-			smartContractItemProvider.dispose();
 		if (termItemProvider != null)
 			termItemProvider.dispose();
 		if (attributeItemProvider != null)

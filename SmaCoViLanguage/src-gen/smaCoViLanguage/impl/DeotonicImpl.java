@@ -7,8 +7,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
 import smaCoViLanguage.Deotonic;
 import smaCoViLanguage.SmaCoViLanguagePackage;
 
@@ -26,7 +24,7 @@ import smaCoViLanguage.SmaCoViLanguagePackage;
  *
  * @generated
  */
-public class DeotonicImpl extends MinimalEObjectImpl.Container implements Deotonic {
+public class DeotonicImpl extends AdicoImpl implements Deotonic {
 	/**
 	 * The default value of the '{@link #getType() <em>Type</em>}' attribute.
 	 * <!-- begin-user-doc -->

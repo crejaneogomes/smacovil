@@ -2,8 +2,6 @@
  */
 package smaCoViLanguage;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Or Else</b></em>'.
@@ -20,7 +18,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface OrElse extends EObject {
+public interface OrElse extends Adico {
 	/**
 	 * Returns the value of the '<em><b>Consequence</b></em>' attribute.
 	 * <!-- begin-user-doc -->
