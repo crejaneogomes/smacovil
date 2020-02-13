@@ -1,0 +1,18 @@
+      Adico(
+            A("Claudia")         
+            D(Deve)         
+            I("Almoçar"	)         
+            C(IF("dinheiro",">","0"))         
+            	AND          
+            Adico(
+                  A("Claudia")         
+                  D(deve)         
+                  I("bater ponto"	)         
+            )         
+            O(Adico(
+                  A("Claudia")         
+                  D(Não deve)         
+                  I("Almoçar"	)         
+                  C("antes","do horario permitido")         
+            ))         
+      )          

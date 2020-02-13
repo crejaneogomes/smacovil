@@ -1,0 +1,53 @@
+[comment encoding = UTF-8 /]
+
+[module generate('http://www.example.org/smaCoViLanguage', 'http://www.eclipse.org/ocl/1.1.0/OCL/Types')]
+
+
+[template public generateElement(aMain : Main)]
+[comment @main /]
+[file ('program'.concat('.adico'), false, 'UTF-8')]
+   	[for (p: SmartContract | aMain.eContents())]     
+      [p.generateElement()/]          
+	[/for]
+[/file]
+[/template]
+
+[template public generateElement(aTerm : Term)]
+Adico(
+	[for (p: SmartContract | aTerm.eContents())]     
+      [p.generateElement()/]         
+	[/for]
+)
+[/template]
+
+[template public generateElement(aAttribute : Attribute)]
+A("[aAttribute.AttributeName/]")
+[/template]
+
+[template public generateElement(aDeotonic : Deotonic)]
+D([aDeotonic.Deotonic/])
+[/template]
+
+[template public generateElement(aAim : Aim)]
+I("[aAim.Aim/]"	[if (aAim.AimObject <> null)], Object{"[aAim.AimObject/]"}[/if][if (aAim.Targets <> null)], Target{"[aAim.Targets/]"}})[/if])
+[/template]
+
+[template public generateElement(aSimpleCondition : SimpleCondition)]
+C("[aSimpleCondition.Operator/]","[aSimpleCondition.FirstPartCondition/]")
+[/template]
+
+[template public generateElement(aCondition : Condition)]
+C(IF("[aCondition.FirstPartCondition/]","[aCondition.Operator/]","[aCondition.LastConditionPart/]"))
+[/template]
+
+[template public generateElement(aOrElse : OrElse)]
+O([aOrElse.eContents(Term)->first().generateElement()/])
+[/template]
+
+[template public generateElement(aAnd : And)]
+	AND [for (p: SmartContract | aAnd.eContents())]     
+      [p.generateElement()/]
+	[/for]
+[/template]
+
+[template public generateElement(aSmartContract : SmartContract)/]

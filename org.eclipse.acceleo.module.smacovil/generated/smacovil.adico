@@ -1,0 +1,15 @@
+Adico(
+      	A()          
+       	D(Must)          
+       	I(send to seller)          
+       	C(buyer have money)          
+      	O(
+      			Adico(      	A()
+      				AND         
+      		       	D(fica com o dinheiro)
+      				AND         
+      		)
+      		
+           )          
+
+)
