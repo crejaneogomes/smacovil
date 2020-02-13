@@ -107,6 +107,21 @@ public class SmaCoViLanguageAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseMain(Main object) {
+			return createMainAdapter();
+		}
+
+		@Override
+		public Adapter caseAnd(And object) {
+			return createAndAdapter();
+		}
+
+		@Override
+		public Adapter caseSimpleCondition(SimpleCondition object) {
+			return createSimpleConditionAdapter();
+		}
+
+		@Override
 		public Adapter defaultCase(EObject object) {
 			return createEObjectAdapter();
 		}
@@ -234,6 +249,48 @@ public class SmaCoViLanguageAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createAdicoAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link smaCoViLanguage.Main <em>Main</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see smaCoViLanguage.Main
+	 * @generated
+	 */
+	public Adapter createMainAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link smaCoViLanguage.And <em>And</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see smaCoViLanguage.And
+	 * @generated
+	 */
+	public Adapter createAndAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link smaCoViLanguage.SimpleCondition <em>Simple Condition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see smaCoViLanguage.SimpleCondition
+	 * @generated
+	 */
+	public Adapter createSimpleConditionAdapter() {
 		return null;
 	}
 

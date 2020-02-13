@@ -76,6 +76,33 @@ public interface SmaCoViLanguageFactory extends EFactory {
 	OrElse createOrElse();
 
 	/**
+	 * Returns a new object of class '<em>Main</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Main</em>'.
+	 * @generated
+	 */
+	Main createMain();
+
+	/**
+	 * Returns a new object of class '<em>And</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>And</em>'.
+	 * @generated
+	 */
+	And createAnd();
+
+	/**
+	 * Returns a new object of class '<em>Simple Condition</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Simple Condition</em>'.
+	 * @generated
+	 */
+	SimpleCondition createSimpleCondition();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -7,25 +7,25 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import smaCoViLanguage.Condition;
+
+import smaCoViLanguage.SimpleCondition;
 import smaCoViLanguage.SmaCoViLanguagePackage;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Condition</b></em>'.
+ * An implementation of the model object '<em><b>Simple Condition</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link smaCoViLanguage.impl.ConditionImpl#getOperator <em>Operator</em>}</li>
- *   <li>{@link smaCoViLanguage.impl.ConditionImpl#getFirstPartCondition <em>First Part Condition</em>}</li>
- *   <li>{@link smaCoViLanguage.impl.ConditionImpl#getLastConditionPart <em>Last Condition Part</em>}</li>
+ *   <li>{@link smaCoViLanguage.impl.SimpleConditionImpl#getOperator <em>Operator</em>}</li>
+ *   <li>{@link smaCoViLanguage.impl.SimpleConditionImpl#getFirstPartCondition <em>First Part Condition</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class ConditionImpl extends AdicoImpl implements Condition {
+public class SimpleConditionImpl extends AdicoImpl implements SimpleCondition {
 	/**
 	 * The default value of the '{@link #getOperator() <em>Operator</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -67,31 +67,11 @@ public class ConditionImpl extends AdicoImpl implements Condition {
 	protected String firstPartCondition = FIRST_PART_CONDITION_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getLastConditionPart() <em>Last Condition Part</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getLastConditionPart()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String LAST_CONDITION_PART_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getLastConditionPart() <em>Last Condition Part</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getLastConditionPart()
-	 * @generated
-	 * @ordered
-	 */
-	protected String lastConditionPart = LAST_CONDITION_PART_EDEFAULT;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ConditionImpl() {
+	protected SimpleConditionImpl() {
 		super();
 	}
 
@@ -102,7 +82,7 @@ public class ConditionImpl extends AdicoImpl implements Condition {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return SmaCoViLanguagePackage.Literals.CONDITION;
+		return SmaCoViLanguagePackage.Literals.SIMPLE_CONDITION;
 	}
 
 	/**
@@ -123,7 +103,7 @@ public class ConditionImpl extends AdicoImpl implements Condition {
 		String oldOperator = operator;
 		operator = newOperator;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SmaCoViLanguagePackage.CONDITION__OPERATOR,
+			eNotify(new ENotificationImpl(this, Notification.SET, SmaCoViLanguagePackage.SIMPLE_CONDITION__OPERATOR,
 					oldOperator, operator));
 	}
 
@@ -146,29 +126,8 @@ public class ConditionImpl extends AdicoImpl implements Condition {
 		firstPartCondition = newFirstPartCondition;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					SmaCoViLanguagePackage.CONDITION__FIRST_PART_CONDITION, oldFirstPartCondition, firstPartCondition));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getLastConditionPart() {
-		return lastConditionPart;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setLastConditionPart(String newLastConditionPart) {
-		String oldLastConditionPart = lastConditionPart;
-		lastConditionPart = newLastConditionPart;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SmaCoViLanguagePackage.CONDITION__LAST_CONDITION_PART,
-					oldLastConditionPart, lastConditionPart));
+					SmaCoViLanguagePackage.SIMPLE_CONDITION__FIRST_PART_CONDITION, oldFirstPartCondition,
+					firstPartCondition));
 	}
 
 	/**
@@ -179,12 +138,10 @@ public class ConditionImpl extends AdicoImpl implements Condition {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case SmaCoViLanguagePackage.CONDITION__OPERATOR:
+		case SmaCoViLanguagePackage.SIMPLE_CONDITION__OPERATOR:
 			return getOperator();
-		case SmaCoViLanguagePackage.CONDITION__FIRST_PART_CONDITION:
+		case SmaCoViLanguagePackage.SIMPLE_CONDITION__FIRST_PART_CONDITION:
 			return getFirstPartCondition();
-		case SmaCoViLanguagePackage.CONDITION__LAST_CONDITION_PART:
-			return getLastConditionPart();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -197,14 +154,11 @@ public class ConditionImpl extends AdicoImpl implements Condition {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case SmaCoViLanguagePackage.CONDITION__OPERATOR:
+		case SmaCoViLanguagePackage.SIMPLE_CONDITION__OPERATOR:
 			setOperator((String) newValue);
 			return;
-		case SmaCoViLanguagePackage.CONDITION__FIRST_PART_CONDITION:
+		case SmaCoViLanguagePackage.SIMPLE_CONDITION__FIRST_PART_CONDITION:
 			setFirstPartCondition((String) newValue);
-			return;
-		case SmaCoViLanguagePackage.CONDITION__LAST_CONDITION_PART:
-			setLastConditionPart((String) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -218,14 +172,11 @@ public class ConditionImpl extends AdicoImpl implements Condition {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case SmaCoViLanguagePackage.CONDITION__OPERATOR:
+		case SmaCoViLanguagePackage.SIMPLE_CONDITION__OPERATOR:
 			setOperator(OPERATOR_EDEFAULT);
 			return;
-		case SmaCoViLanguagePackage.CONDITION__FIRST_PART_CONDITION:
+		case SmaCoViLanguagePackage.SIMPLE_CONDITION__FIRST_PART_CONDITION:
 			setFirstPartCondition(FIRST_PART_CONDITION_EDEFAULT);
-			return;
-		case SmaCoViLanguagePackage.CONDITION__LAST_CONDITION_PART:
-			setLastConditionPart(LAST_CONDITION_PART_EDEFAULT);
 			return;
 		}
 		super.eUnset(featureID);
@@ -239,14 +190,11 @@ public class ConditionImpl extends AdicoImpl implements Condition {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case SmaCoViLanguagePackage.CONDITION__OPERATOR:
+		case SmaCoViLanguagePackage.SIMPLE_CONDITION__OPERATOR:
 			return OPERATOR_EDEFAULT == null ? operator != null : !OPERATOR_EDEFAULT.equals(operator);
-		case SmaCoViLanguagePackage.CONDITION__FIRST_PART_CONDITION:
+		case SmaCoViLanguagePackage.SIMPLE_CONDITION__FIRST_PART_CONDITION:
 			return FIRST_PART_CONDITION_EDEFAULT == null ? firstPartCondition != null
 					: !FIRST_PART_CONDITION_EDEFAULT.equals(firstPartCondition);
-		case SmaCoViLanguagePackage.CONDITION__LAST_CONDITION_PART:
-			return LAST_CONDITION_PART_EDEFAULT == null ? lastConditionPart != null
-					: !LAST_CONDITION_PART_EDEFAULT.equals(lastConditionPart);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -266,10 +214,8 @@ public class ConditionImpl extends AdicoImpl implements Condition {
 		result.append(operator);
 		result.append(", FirstPartCondition: ");
 		result.append(firstPartCondition);
-		result.append(", LastConditionPart: ");
-		result.append(lastConditionPart);
 		result.append(')');
 		return result.toString();
 	}
 
-} //ConditionImpl
+} //SimpleConditionImpl

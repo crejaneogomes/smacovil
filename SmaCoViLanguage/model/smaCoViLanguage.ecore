@@ -9,23 +9,36 @@
   <eClassifiers xsi:type="ecore:EClass" name="Term" eSuperTypes="#//SmartContract">
     <eStructuralFeatures xsi:type="ecore:EReference" name="smartcontract" upperBound="-1"
         eType="#//SmartContract" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="orelse" upperBound="-1"
+        eType="#//OrElse" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Attribute" eSuperTypes="#//Adico">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="AttributeName" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Deotonic" eSuperTypes="#//Adico">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Type" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Deotonic" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Condition" eSuperTypes="#//Adico">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Condition" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Operator" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="FirstPartCondition" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="LastConditionPart" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Aim" eSuperTypes="#//Adico">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Type" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Aim" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="AimObject" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Targets" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="OrElse" eSuperTypes="#//Adico">
+  <eClassifiers xsi:type="ecore:EClass" name="OrElse" eSuperTypes="#//Term">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Consequence" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Adico" abstract="true" eSuperTypes="#//SmartContract"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Main" eSuperTypes="#//SmartContract">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="smartcontract" eType="#//SmartContract"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="And" eSuperTypes="#//Term"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SimpleCondition" eSuperTypes="#//Adico">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Operator" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="FirstPartCondition" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  </eClassifiers>
 </ecore:EPackage>

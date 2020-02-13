@@ -68,6 +68,12 @@ public class SmaCoViLanguageFactoryImpl extends EFactoryImpl implements SmaCoViL
 			return createAim();
 		case SmaCoViLanguagePackage.OR_ELSE:
 			return createOrElse();
+		case SmaCoViLanguagePackage.MAIN:
+			return createMain();
+		case SmaCoViLanguagePackage.AND:
+			return createAnd();
+		case SmaCoViLanguagePackage.SIMPLE_CONDITION:
+			return createSimpleCondition();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -131,6 +137,36 @@ public class SmaCoViLanguageFactoryImpl extends EFactoryImpl implements SmaCoViL
 	public OrElse createOrElse() {
 		OrElseImpl orElse = new OrElseImpl();
 		return orElse;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Main createMain() {
+		MainImpl main = new MainImpl();
+		return main;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public And createAnd() {
+		AndImpl and = new AndImpl();
+		return and;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SimpleCondition createSimpleCondition() {
+		SimpleConditionImpl simpleCondition = new SimpleConditionImpl();
+		return simpleCondition;
 	}
 
 	/**

@@ -7,28 +7,30 @@ import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
+
 import org.eclipse.emf.ecore.EStructuralFeature;
+
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
+import smaCoViLanguage.Main;
 import smaCoViLanguage.SmaCoViLanguageFactory;
 import smaCoViLanguage.SmaCoViLanguagePackage;
-import smaCoViLanguage.Term;
 
 /**
- * This is the item provider adapter for a {@link smaCoViLanguage.Term} object.
+ * This is the item provider adapter for a {@link smaCoViLanguage.Main} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class TermItemProvider extends SmartContractItemProvider {
+public class MainItemProvider extends SmartContractItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TermItemProvider(AdapterFactory adapterFactory) {
+	public MainItemProvider(AdapterFactory adapterFactory) {
 		super(adapterFactory);
 	}
 
@@ -59,8 +61,7 @@ public class TermItemProvider extends SmartContractItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(SmaCoViLanguagePackage.Literals.TERM__SMARTCONTRACT);
-			childrenFeatures.add(SmaCoViLanguagePackage.Literals.TERM__ORELSE);
+			childrenFeatures.add(SmaCoViLanguagePackage.Literals.MAIN__SMARTCONTRACT);
 		}
 		return childrenFeatures;
 	}
@@ -79,14 +80,14 @@ public class TermItemProvider extends SmartContractItemProvider {
 	}
 
 	/**
-	 * This returns Term.gif.
+	 * This returns Main.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/Term"));
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/Main"));
 	}
 
 	/**
@@ -107,9 +108,9 @@ public class TermItemProvider extends SmartContractItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((Term) object).getName();
-		return label == null || label.length() == 0 ? getString("_UI_Term_type")
-				: getString("_UI_Term_type") + " " + label;
+		String label = ((Main) object).getName();
+		return label == null || label.length() == 0 ? getString("_UI_Main_type")
+				: getString("_UI_Main_type") + " " + label;
 	}
 
 	/**
@@ -123,9 +124,8 @@ public class TermItemProvider extends SmartContractItemProvider {
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
 
-		switch (notification.getFeatureID(Term.class)) {
-		case SmaCoViLanguagePackage.TERM__SMARTCONTRACT:
-		case SmaCoViLanguagePackage.TERM__ORELSE:
+		switch (notification.getFeatureID(Main.class)) {
+		case SmaCoViLanguagePackage.MAIN__SMARTCONTRACT:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 			return;
 		}
@@ -143,56 +143,32 @@ public class TermItemProvider extends SmartContractItemProvider {
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-		newChildDescriptors.add(createChildParameter(SmaCoViLanguagePackage.Literals.TERM__SMARTCONTRACT,
+		newChildDescriptors.add(createChildParameter(SmaCoViLanguagePackage.Literals.MAIN__SMARTCONTRACT,
 				SmaCoViLanguageFactory.eINSTANCE.createTerm()));
 
-		newChildDescriptors.add(createChildParameter(SmaCoViLanguagePackage.Literals.TERM__SMARTCONTRACT,
+		newChildDescriptors.add(createChildParameter(SmaCoViLanguagePackage.Literals.MAIN__SMARTCONTRACT,
 				SmaCoViLanguageFactory.eINSTANCE.createAttribute()));
 
-		newChildDescriptors.add(createChildParameter(SmaCoViLanguagePackage.Literals.TERM__SMARTCONTRACT,
+		newChildDescriptors.add(createChildParameter(SmaCoViLanguagePackage.Literals.MAIN__SMARTCONTRACT,
 				SmaCoViLanguageFactory.eINSTANCE.createDeotonic()));
 
-		newChildDescriptors.add(createChildParameter(SmaCoViLanguagePackage.Literals.TERM__SMARTCONTRACT,
+		newChildDescriptors.add(createChildParameter(SmaCoViLanguagePackage.Literals.MAIN__SMARTCONTRACT,
 				SmaCoViLanguageFactory.eINSTANCE.createCondition()));
 
-		newChildDescriptors.add(createChildParameter(SmaCoViLanguagePackage.Literals.TERM__SMARTCONTRACT,
+		newChildDescriptors.add(createChildParameter(SmaCoViLanguagePackage.Literals.MAIN__SMARTCONTRACT,
 				SmaCoViLanguageFactory.eINSTANCE.createAim()));
 
-		newChildDescriptors.add(createChildParameter(SmaCoViLanguagePackage.Literals.TERM__SMARTCONTRACT,
+		newChildDescriptors.add(createChildParameter(SmaCoViLanguagePackage.Literals.MAIN__SMARTCONTRACT,
 				SmaCoViLanguageFactory.eINSTANCE.createOrElse()));
 
-		newChildDescriptors.add(createChildParameter(SmaCoViLanguagePackage.Literals.TERM__SMARTCONTRACT,
+		newChildDescriptors.add(createChildParameter(SmaCoViLanguagePackage.Literals.MAIN__SMARTCONTRACT,
 				SmaCoViLanguageFactory.eINSTANCE.createMain()));
 
-		newChildDescriptors.add(createChildParameter(SmaCoViLanguagePackage.Literals.TERM__SMARTCONTRACT,
+		newChildDescriptors.add(createChildParameter(SmaCoViLanguagePackage.Literals.MAIN__SMARTCONTRACT,
 				SmaCoViLanguageFactory.eINSTANCE.createAnd()));
 
-		newChildDescriptors.add(createChildParameter(SmaCoViLanguagePackage.Literals.TERM__SMARTCONTRACT,
+		newChildDescriptors.add(createChildParameter(SmaCoViLanguagePackage.Literals.MAIN__SMARTCONTRACT,
 				SmaCoViLanguageFactory.eINSTANCE.createSimpleCondition()));
-
-		newChildDescriptors.add(createChildParameter(SmaCoViLanguagePackage.Literals.TERM__ORELSE,
-				SmaCoViLanguageFactory.eINSTANCE.createOrElse()));
-	}
-
-	/**
-	 * This returns the label text for {@link org.eclipse.emf.edit.command.CreateChildCommand}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String getCreateChildText(Object owner, Object feature, Object child, Collection<?> selection) {
-		Object childFeature = feature;
-		Object childObject = child;
-
-		boolean qualify = childFeature == SmaCoViLanguagePackage.Literals.TERM__SMARTCONTRACT
-				|| childFeature == SmaCoViLanguagePackage.Literals.TERM__ORELSE;
-
-		if (qualify) {
-			return getString("_UI_CreateChild_text2",
-					new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
-		}
-		return super.getCreateChildText(owner, feature, child, selection);
 	}
 
 }

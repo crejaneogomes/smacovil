@@ -211,6 +211,75 @@ public class SmaCoViLanguageItemProviderAdapterFactory extends SmaCoViLanguageAd
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link smaCoViLanguage.Main} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected MainItemProvider mainItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link smaCoViLanguage.Main}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createMainAdapter() {
+		if (mainItemProvider == null) {
+			mainItemProvider = new MainItemProvider(this);
+		}
+
+		return mainItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link smaCoViLanguage.And} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected AndItemProvider andItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link smaCoViLanguage.And}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createAndAdapter() {
+		if (andItemProvider == null) {
+			andItemProvider = new AndItemProvider(this);
+		}
+
+		return andItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link smaCoViLanguage.SimpleCondition} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected SimpleConditionItemProvider simpleConditionItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link smaCoViLanguage.SimpleCondition}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createSimpleConditionAdapter() {
+		if (simpleConditionItemProvider == null) {
+			simpleConditionItemProvider = new SimpleConditionItemProvider(this);
+		}
+
+		return simpleConditionItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -321,6 +390,12 @@ public class SmaCoViLanguageItemProviderAdapterFactory extends SmaCoViLanguageAd
 			aimItemProvider.dispose();
 		if (orElseItemProvider != null)
 			orElseItemProvider.dispose();
+		if (mainItemProvider != null)
+			mainItemProvider.dispose();
+		if (andItemProvider != null)
+			andItemProvider.dispose();
+		if (simpleConditionItemProvider != null)
+			simpleConditionItemProvider.dispose();
 	}
 
 }

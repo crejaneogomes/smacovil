@@ -11,8 +11,9 @@ package smaCoViLanguage;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link smaCoViLanguage.Aim#getType <em>Type</em>}</li>
  *   <li>{@link smaCoViLanguage.Aim#getAim <em>Aim</em>}</li>
+ *   <li>{@link smaCoViLanguage.Aim#getAimObject <em>Aim Object</em>}</li>
+ *   <li>{@link smaCoViLanguage.Aim#getTargets <em>Targets</em>}</li>
  * </ul>
  *
  * @see smaCoViLanguage.SmaCoViLanguagePackage#getAim()
@@ -20,32 +21,6 @@ package smaCoViLanguage;
  * @generated
  */
 public interface Aim extends Adico {
-	/**
-	 * Returns the value of the '<em><b>Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Type</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Type</em>' attribute.
-	 * @see #setType(String)
-	 * @see smaCoViLanguage.SmaCoViLanguagePackage#getAim_Type()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 * @generated
-	 */
-	String getType();
-
-	/**
-	 * Sets the value of the '{@link smaCoViLanguage.Aim#getType <em>Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Type</em>' attribute.
-	 * @see #getType()
-	 * @generated
-	 */
-	void setType(String value);
-
 	/**
 	 * Returns the value of the '<em><b>Aim</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -71,5 +46,57 @@ public interface Aim extends Adico {
 	 * @generated
 	 */
 	void setAim(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Aim Object</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Aim Object</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Aim Object</em>' attribute.
+	 * @see #setAimObject(String)
+	 * @see smaCoViLanguage.SmaCoViLanguagePackage#getAim_AimObject()
+	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 * @generated
+	 */
+	String getAimObject();
+
+	/**
+	 * Sets the value of the '{@link smaCoViLanguage.Aim#getAimObject <em>Aim Object</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Aim Object</em>' attribute.
+	 * @see #getAimObject()
+	 * @generated
+	 */
+	void setAimObject(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Targets</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Targets</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Targets</em>' attribute.
+	 * @see #setTargets(String)
+	 * @see smaCoViLanguage.SmaCoViLanguagePackage#getAim_Targets()
+	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 * @generated
+	 */
+	String getTargets();
+
+	/**
+	 * Sets the value of the '{@link smaCoViLanguage.Aim#getTargets <em>Targets</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Targets</em>' attribute.
+	 * @see #getTargets()
+	 * @generated
+	 */
+	void setTargets(String value);
 
 } // Aim

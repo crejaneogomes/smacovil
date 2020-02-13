@@ -12,6 +12,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
+import smaCoViLanguage.OrElse;
 import smaCoViLanguage.SmaCoViLanguagePackage;
 import smaCoViLanguage.SmartContract;
 import smaCoViLanguage.Term;
@@ -25,6 +26,7 @@ import smaCoViLanguage.Term;
  * </p>
  * <ul>
  *   <li>{@link smaCoViLanguage.impl.TermImpl#getSmartcontract <em>Smartcontract</em>}</li>
+ *   <li>{@link smaCoViLanguage.impl.TermImpl#getOrelse <em>Orelse</em>}</li>
  * </ul>
  *
  * @generated
@@ -39,6 +41,16 @@ public class TermImpl extends SmartContractImpl implements Term {
 	 * @ordered
 	 */
 	protected EList<SmartContract> smartcontract;
+
+	/**
+	 * The cached value of the '{@link #getOrelse() <em>Orelse</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getOrelse()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<OrElse> orelse;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -77,11 +89,25 @@ public class TermImpl extends SmartContractImpl implements Term {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EList<OrElse> getOrelse() {
+		if (orelse == null) {
+			orelse = new EObjectContainmentEList<OrElse>(OrElse.class, this, SmaCoViLanguagePackage.TERM__ORELSE);
+		}
+		return orelse;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case SmaCoViLanguagePackage.TERM__SMARTCONTRACT:
 			return ((InternalEList<?>) getSmartcontract()).basicRemove(otherEnd, msgs);
+		case SmaCoViLanguagePackage.TERM__ORELSE:
+			return ((InternalEList<?>) getOrelse()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -96,6 +122,8 @@ public class TermImpl extends SmartContractImpl implements Term {
 		switch (featureID) {
 		case SmaCoViLanguagePackage.TERM__SMARTCONTRACT:
 			return getSmartcontract();
+		case SmaCoViLanguagePackage.TERM__ORELSE:
+			return getOrelse();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -113,6 +141,10 @@ public class TermImpl extends SmartContractImpl implements Term {
 			getSmartcontract().clear();
 			getSmartcontract().addAll((Collection<? extends SmartContract>) newValue);
 			return;
+		case SmaCoViLanguagePackage.TERM__ORELSE:
+			getOrelse().clear();
+			getOrelse().addAll((Collection<? extends OrElse>) newValue);
+			return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -128,6 +160,9 @@ public class TermImpl extends SmartContractImpl implements Term {
 		case SmaCoViLanguagePackage.TERM__SMARTCONTRACT:
 			getSmartcontract().clear();
 			return;
+		case SmaCoViLanguagePackage.TERM__ORELSE:
+			getOrelse().clear();
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -142,6 +177,8 @@ public class TermImpl extends SmartContractImpl implements Term {
 		switch (featureID) {
 		case SmaCoViLanguagePackage.TERM__SMARTCONTRACT:
 			return smartcontract != null && !smartcontract.isEmpty();
+		case SmaCoViLanguagePackage.TERM__ORELSE:
+			return orelse != null && !orelse.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

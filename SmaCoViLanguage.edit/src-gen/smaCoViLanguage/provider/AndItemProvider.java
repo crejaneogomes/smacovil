@@ -7,28 +7,26 @@ import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
-import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
-import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
-import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import smaCoViLanguage.Deotonic;
+import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
+
+import smaCoViLanguage.And;
 import smaCoViLanguage.SmaCoViLanguagePackage;
 
 /**
- * This is the item provider adapter for a {@link smaCoViLanguage.Deotonic} object.
+ * This is the item provider adapter for a {@link smaCoViLanguage.And} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class DeotonicItemProvider extends AdicoItemProvider {
+public class AndItemProvider extends TermItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DeotonicItemProvider(AdapterFactory adapterFactory) {
+	public AndItemProvider(AdapterFactory adapterFactory) {
 		super(adapterFactory);
 	}
 
@@ -43,36 +41,19 @@ public class DeotonicItemProvider extends AdicoItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addDeotonicPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
 
 	/**
-	 * This adds a property descriptor for the Deotonic feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addDeotonicPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_Deotonic_Deotonic_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_Deotonic_Deotonic_feature",
-								"_UI_Deotonic_type"),
-						SmaCoViLanguagePackage.Literals.DEOTONIC__DEOTONIC, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
-	}
-
-	/**
-	 * This returns Deotonic.gif.
+	 * This returns And.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/Deotonic"));
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/And"));
 	}
 
 	/**
@@ -93,9 +74,9 @@ public class DeotonicItemProvider extends AdicoItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((Deotonic) object).getName();
-		return label == null || label.length() == 0 ? getString("_UI_Deotonic_type")
-				: getString("_UI_Deotonic_type") + " " + label;
+		String label = ((And) object).getName();
+		return label == null || label.length() == 0 ? getString("_UI_And_type")
+				: getString("_UI_And_type") + " " + label;
 	}
 
 	/**
@@ -108,12 +89,6 @@ public class DeotonicItemProvider extends AdicoItemProvider {
 	@Override
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
-
-		switch (notification.getFeatureID(Deotonic.class)) {
-		case SmaCoViLanguagePackage.DEOTONIC__DEOTONIC:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
-			return;
-		}
 		super.notifyChanged(notification);
 	}
 
@@ -127,6 +102,27 @@ public class DeotonicItemProvider extends AdicoItemProvider {
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
+	}
+
+	/**
+	 * This returns the label text for {@link org.eclipse.emf.edit.command.CreateChildCommand}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getCreateChildText(Object owner, Object feature, Object child, Collection<?> selection) {
+		Object childFeature = feature;
+		Object childObject = child;
+
+		boolean qualify = childFeature == SmaCoViLanguagePackage.Literals.TERM__SMARTCONTRACT
+				|| childFeature == SmaCoViLanguagePackage.Literals.TERM__ORELSE;
+
+		if (qualify) {
+			return getString("_UI_CreateChild_text2",
+					new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
+		}
+		return super.getCreateChildText(owner, feature, child, selection);
 	}
 
 }

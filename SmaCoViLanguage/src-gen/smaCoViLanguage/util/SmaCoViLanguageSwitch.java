@@ -130,7 +130,7 @@ public class SmaCoViLanguageSwitch<T> extends Switch<T> {
 			OrElse orElse = (OrElse) theEObject;
 			T result = caseOrElse(orElse);
 			if (result == null)
-				result = caseAdico(orElse);
+				result = caseTerm(orElse);
 			if (result == null)
 				result = caseSmartContract(orElse);
 			if (result == null)
@@ -142,6 +142,37 @@ public class SmaCoViLanguageSwitch<T> extends Switch<T> {
 			T result = caseAdico(adico);
 			if (result == null)
 				result = caseSmartContract(adico);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case SmaCoViLanguagePackage.MAIN: {
+			Main main = (Main) theEObject;
+			T result = caseMain(main);
+			if (result == null)
+				result = caseSmartContract(main);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case SmaCoViLanguagePackage.AND: {
+			And and = (And) theEObject;
+			T result = caseAnd(and);
+			if (result == null)
+				result = caseTerm(and);
+			if (result == null)
+				result = caseSmartContract(and);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case SmaCoViLanguagePackage.SIMPLE_CONDITION: {
+			SimpleCondition simpleCondition = (SimpleCondition) theEObject;
+			T result = caseSimpleCondition(simpleCondition);
+			if (result == null)
+				result = caseAdico(simpleCondition);
+			if (result == null)
+				result = caseSmartContract(simpleCondition);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -268,6 +299,51 @@ public class SmaCoViLanguageSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseAdico(Adico object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Main</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Main</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMain(Main object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>And</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>And</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAnd(And object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Simple Condition</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Simple Condition</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSimpleCondition(SimpleCondition object) {
 		return null;
 	}
 

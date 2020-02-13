@@ -7,28 +7,29 @@ import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
+
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import smaCoViLanguage.Deotonic;
+import smaCoViLanguage.SimpleCondition;
 import smaCoViLanguage.SmaCoViLanguagePackage;
 
 /**
- * This is the item provider adapter for a {@link smaCoViLanguage.Deotonic} object.
+ * This is the item provider adapter for a {@link smaCoViLanguage.SimpleCondition} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class DeotonicItemProvider extends AdicoItemProvider {
+public class SimpleConditionItemProvider extends AdicoItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DeotonicItemProvider(AdapterFactory adapterFactory) {
+	public SimpleConditionItemProvider(AdapterFactory adapterFactory) {
 		super(adapterFactory);
 	}
 
@@ -43,36 +44,53 @@ public class DeotonicItemProvider extends AdicoItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addDeotonicPropertyDescriptor(object);
+			addOperatorPropertyDescriptor(object);
+			addFirstPartConditionPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
 
 	/**
-	 * This adds a property descriptor for the Deotonic feature.
+	 * This adds a property descriptor for the Operator feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addDeotonicPropertyDescriptor(Object object) {
+	protected void addOperatorPropertyDescriptor(Object object) {
 		itemPropertyDescriptors
 				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_Deotonic_Deotonic_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_Deotonic_Deotonic_feature",
-								"_UI_Deotonic_type"),
-						SmaCoViLanguagePackage.Literals.DEOTONIC__DEOTONIC, true, false, false,
+						getResourceLocator(), getString("_UI_SimpleCondition_Operator_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_SimpleCondition_Operator_feature",
+								"_UI_SimpleCondition_type"),
+						SmaCoViLanguagePackage.Literals.SIMPLE_CONDITION__OPERATOR, true, false, false,
 						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
-	 * This returns Deotonic.gif.
+	 * This adds a property descriptor for the First Part Condition feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addFirstPartConditionPropertyDescriptor(Object object) {
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
+						getResourceLocator(), getString("_UI_SimpleCondition_FirstPartCondition_feature"),
+						getString("_UI_PropertyDescriptor_description",
+								"_UI_SimpleCondition_FirstPartCondition_feature", "_UI_SimpleCondition_type"),
+						SmaCoViLanguagePackage.Literals.SIMPLE_CONDITION__FIRST_PART_CONDITION, true, false, false,
+						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+	}
+
+	/**
+	 * This returns SimpleCondition.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/Deotonic"));
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/SimpleCondition"));
 	}
 
 	/**
@@ -93,9 +111,9 @@ public class DeotonicItemProvider extends AdicoItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((Deotonic) object).getName();
-		return label == null || label.length() == 0 ? getString("_UI_Deotonic_type")
-				: getString("_UI_Deotonic_type") + " " + label;
+		String label = ((SimpleCondition) object).getName();
+		return label == null || label.length() == 0 ? getString("_UI_SimpleCondition_type")
+				: getString("_UI_SimpleCondition_type") + " " + label;
 	}
 
 	/**
@@ -109,8 +127,9 @@ public class DeotonicItemProvider extends AdicoItemProvider {
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
 
-		switch (notification.getFeatureID(Deotonic.class)) {
-		case SmaCoViLanguagePackage.DEOTONIC__DEOTONIC:
+		switch (notification.getFeatureID(SimpleCondition.class)) {
+		case SmaCoViLanguagePackage.SIMPLE_CONDITION__OPERATOR:
+		case SmaCoViLanguagePackage.SIMPLE_CONDITION__FIRST_PART_CONDITION:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 			return;
 		}

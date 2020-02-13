@@ -18,7 +18,7 @@ package smaCoViLanguage;
  * @model
  * @generated
  */
-public interface OrElse extends Adico {
+public interface OrElse extends Term {
 	/**
 	 * Returns the value of the '<em><b>Consequence</b></em>' attribute.
 	 * <!-- begin-user-doc -->

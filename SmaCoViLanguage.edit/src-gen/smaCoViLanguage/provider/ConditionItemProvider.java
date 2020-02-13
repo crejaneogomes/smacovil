@@ -43,24 +43,58 @@ public class ConditionItemProvider extends AdicoItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addConditionPropertyDescriptor(object);
+			addOperatorPropertyDescriptor(object);
+			addFirstPartConditionPropertyDescriptor(object);
+			addLastConditionPartPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
 
 	/**
-	 * This adds a property descriptor for the Condition feature.
+	 * This adds a property descriptor for the Operator feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addConditionPropertyDescriptor(Object object) {
+	protected void addOperatorPropertyDescriptor(Object object) {
 		itemPropertyDescriptors
 				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_Condition_Condition_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_Condition_Condition_feature",
+						getResourceLocator(), getString("_UI_Condition_Operator_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_Condition_Operator_feature",
 								"_UI_Condition_type"),
-						SmaCoViLanguagePackage.Literals.CONDITION__CONDITION, true, false, false,
+						SmaCoViLanguagePackage.Literals.CONDITION__OPERATOR, true, false, false,
+						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+	}
+
+	/**
+	 * This adds a property descriptor for the First Part Condition feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addFirstPartConditionPropertyDescriptor(Object object) {
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
+						getResourceLocator(), getString("_UI_Condition_FirstPartCondition_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_Condition_FirstPartCondition_feature",
+								"_UI_Condition_type"),
+						SmaCoViLanguagePackage.Literals.CONDITION__FIRST_PART_CONDITION, true, false, false,
+						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Last Condition Part feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addLastConditionPartPropertyDescriptor(Object object) {
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
+						getResourceLocator(), getString("_UI_Condition_LastConditionPart_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_Condition_LastConditionPart_feature",
+								"_UI_Condition_type"),
+						SmaCoViLanguagePackage.Literals.CONDITION__LAST_CONDITION_PART, true, false, false,
 						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
@@ -110,7 +144,9 @@ public class ConditionItemProvider extends AdicoItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Condition.class)) {
-		case SmaCoViLanguagePackage.CONDITION__CONDITION:
+		case SmaCoViLanguagePackage.CONDITION__OPERATOR:
+		case SmaCoViLanguagePackage.CONDITION__FIRST_PART_CONDITION:
+		case SmaCoViLanguagePackage.CONDITION__LAST_CONDITION_PART:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 			return;
 		}

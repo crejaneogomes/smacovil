@@ -13,10 +13,13 @@ import org.eclipse.emf.ecore.xml.type.XMLTypePackage;
 
 import smaCoViLanguage.Adico;
 import smaCoViLanguage.Aim;
+import smaCoViLanguage.And;
 import smaCoViLanguage.Attribute;
 import smaCoViLanguage.Condition;
 import smaCoViLanguage.Deotonic;
+import smaCoViLanguage.Main;
 import smaCoViLanguage.OrElse;
+import smaCoViLanguage.SimpleCondition;
 import smaCoViLanguage.SmaCoViLanguageFactory;
 import smaCoViLanguage.SmaCoViLanguagePackage;
 import smaCoViLanguage.SmartContract;
@@ -84,6 +87,27 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 	 * @generated
 	 */
 	private EClass adicoEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass mainEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass andEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass simpleConditionEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -202,6 +226,15 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getTerm_Orelse() {
+		return (EReference) termEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getAttribute() {
 		return attributeEClass;
 	}
@@ -229,17 +262,8 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDeotonic_Type() {
-		return (EAttribute) deotonicEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getDeotonic_Deotonic() {
-		return (EAttribute) deotonicEClass.getEStructuralFeatures().get(1);
+		return (EAttribute) deotonicEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -256,8 +280,26 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCondition_Condition() {
+	public EAttribute getCondition_Operator() {
 		return (EAttribute) conditionEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getCondition_FirstPartCondition() {
+		return (EAttribute) conditionEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getCondition_LastConditionPart() {
+		return (EAttribute) conditionEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -274,7 +316,7 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAim_Type() {
+	public EAttribute getAim_Aim() {
 		return (EAttribute) aimEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -283,8 +325,17 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAim_Aim() {
+	public EAttribute getAim_AimObject() {
 		return (EAttribute) aimEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getAim_Targets() {
+		return (EAttribute) aimEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -312,6 +363,60 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 	 */
 	public EClass getAdico() {
 		return adicoEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getMain() {
+		return mainEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getMain_Smartcontract() {
+		return (EReference) mainEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getAnd() {
+		return andEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getSimpleCondition() {
+		return simpleConditionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getSimpleCondition_Operator() {
+		return (EAttribute) simpleConditionEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getSimpleCondition_FirstPartCondition() {
+		return (EAttribute) simpleConditionEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -349,25 +454,37 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 
 		termEClass = createEClass(TERM);
 		createEReference(termEClass, TERM__SMARTCONTRACT);
+		createEReference(termEClass, TERM__ORELSE);
 
 		attributeEClass = createEClass(ATTRIBUTE);
 		createEAttribute(attributeEClass, ATTRIBUTE__ATTRIBUTE_NAME);
 
 		deotonicEClass = createEClass(DEOTONIC);
-		createEAttribute(deotonicEClass, DEOTONIC__TYPE);
 		createEAttribute(deotonicEClass, DEOTONIC__DEOTONIC);
 
 		conditionEClass = createEClass(CONDITION);
-		createEAttribute(conditionEClass, CONDITION__CONDITION);
+		createEAttribute(conditionEClass, CONDITION__OPERATOR);
+		createEAttribute(conditionEClass, CONDITION__FIRST_PART_CONDITION);
+		createEAttribute(conditionEClass, CONDITION__LAST_CONDITION_PART);
 
 		aimEClass = createEClass(AIM);
-		createEAttribute(aimEClass, AIM__TYPE);
 		createEAttribute(aimEClass, AIM__AIM);
+		createEAttribute(aimEClass, AIM__AIM_OBJECT);
+		createEAttribute(aimEClass, AIM__TARGETS);
 
 		orElseEClass = createEClass(OR_ELSE);
 		createEAttribute(orElseEClass, OR_ELSE__CONSEQUENCE);
 
 		adicoEClass = createEClass(ADICO);
+
+		mainEClass = createEClass(MAIN);
+		createEReference(mainEClass, MAIN__SMARTCONTRACT);
+
+		andEClass = createEClass(AND);
+
+		simpleConditionEClass = createEClass(SIMPLE_CONDITION);
+		createEAttribute(simpleConditionEClass, SIMPLE_CONDITION__OPERATOR);
+		createEAttribute(simpleConditionEClass, SIMPLE_CONDITION__FIRST_PART_CONDITION);
 	}
 
 	/**
@@ -408,8 +525,11 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 		deotonicEClass.getESuperTypes().add(this.getAdico());
 		conditionEClass.getESuperTypes().add(this.getAdico());
 		aimEClass.getESuperTypes().add(this.getAdico());
-		orElseEClass.getESuperTypes().add(this.getAdico());
+		orElseEClass.getESuperTypes().add(this.getTerm());
 		adicoEClass.getESuperTypes().add(this.getSmartContract());
+		mainEClass.getESuperTypes().add(this.getSmartContract());
+		andEClass.getESuperTypes().add(this.getTerm());
+		simpleConditionEClass.getESuperTypes().add(this.getAdico());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(smartContractEClass, SmartContract.class, "SmartContract", IS_ABSTRACT, !IS_INTERFACE,
@@ -424,6 +544,9 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 		initEReference(getTerm_Smartcontract(), this.getSmartContract(), null, "smartcontract", null, 0, -1, Term.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getTerm_Orelse(), this.getOrElse(), null, "orelse", null, 0, -1, Term.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
 
 		initEClass(attributeEClass, Attribute.class, "Attribute", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -433,21 +556,26 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 
 		initEClass(deotonicEClass, Deotonic.class, "Deotonic", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getDeotonic_Type(), theXMLTypePackage.getString(), "Type", null, 0, 1, Deotonic.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDeotonic_Deotonic(), theXMLTypePackage.getString(), "Deotonic", null, 0, 1, Deotonic.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(conditionEClass, Condition.class, "Condition", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getCondition_Condition(), theXMLTypePackage.getString(), "Condition", null, 0, 1,
+		initEAttribute(getCondition_Operator(), theXMLTypePackage.getString(), "Operator", null, 0, 1, Condition.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCondition_FirstPartCondition(), theXMLTypePackage.getString(), "FirstPartCondition", null, 0,
+				1, Condition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCondition_LastConditionPart(), theXMLTypePackage.getString(), "LastConditionPart", null, 0, 1,
 				Condition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
 
 		initEClass(aimEClass, Aim.class, "Aim", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getAim_Type(), theXMLTypePackage.getString(), "Type", null, 0, 1, Aim.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAim_Aim(), theXMLTypePackage.getString(), "Aim", null, 0, 1, Aim.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAim_AimObject(), theXMLTypePackage.getString(), "AimObject", null, 0, 1, Aim.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAim_Targets(), theXMLTypePackage.getString(), "Targets", null, 0, 1, Aim.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(orElseEClass, OrElse.class, "OrElse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -455,6 +583,22 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(adicoEClass, Adico.class, "Adico", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(mainEClass, Main.class, "Main", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getMain_Smartcontract(), this.getSmartContract(), null, "smartcontract", null, 0, 1, Main.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(andEClass, And.class, "And", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(simpleConditionEClass, SimpleCondition.class, "SimpleCondition", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getSimpleCondition_Operator(), theXMLTypePackage.getString(), "Operator", null, 0, 1,
+				SimpleCondition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSimpleCondition_FirstPartCondition(), theXMLTypePackage.getString(), "FirstPartCondition",
+				null, 0, 1, SimpleCondition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

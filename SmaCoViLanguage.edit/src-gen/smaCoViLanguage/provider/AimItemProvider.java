@@ -43,25 +43,11 @@ public class AimItemProvider extends AdicoItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addTypePropertyDescriptor(object);
 			addAimPropertyDescriptor(object);
+			addAimObjectPropertyDescriptor(object);
+			addTargetsPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Type feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addTypePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_Aim_Type_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_Aim_Type_feature", "_UI_Aim_type"),
-						SmaCoViLanguagePackage.Literals.AIM__TYPE, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -76,6 +62,36 @@ public class AimItemProvider extends AdicoItemProvider {
 						getResourceLocator(), getString("_UI_Aim_Aim_feature"),
 						getString("_UI_PropertyDescriptor_description", "_UI_Aim_Aim_feature", "_UI_Aim_type"),
 						SmaCoViLanguagePackage.Literals.AIM__AIM, true, false, false,
+						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Aim Object feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addAimObjectPropertyDescriptor(Object object) {
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
+						getResourceLocator(), getString("_UI_Aim_AimObject_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_Aim_AimObject_feature", "_UI_Aim_type"),
+						SmaCoViLanguagePackage.Literals.AIM__AIM_OBJECT, true, false, false,
+						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Targets feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addTargetsPropertyDescriptor(Object object) {
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
+						getResourceLocator(), getString("_UI_Aim_Targets_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_Aim_Targets_feature", "_UI_Aim_type"),
+						SmaCoViLanguagePackage.Literals.AIM__TARGETS, true, false, false,
 						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
@@ -125,8 +141,9 @@ public class AimItemProvider extends AdicoItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Aim.class)) {
-		case SmaCoViLanguagePackage.AIM__TYPE:
 		case SmaCoViLanguagePackage.AIM__AIM:
+		case SmaCoViLanguagePackage.AIM__AIM_OBJECT:
+		case SmaCoViLanguagePackage.AIM__TARGETS:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 			return;
 		}

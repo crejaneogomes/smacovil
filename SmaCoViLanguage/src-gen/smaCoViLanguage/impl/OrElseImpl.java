@@ -23,7 +23,7 @@ import smaCoViLanguage.SmaCoViLanguagePackage;
  *
  * @generated
  */
-public class OrElseImpl extends AdicoImpl implements OrElse {
+public class OrElseImpl extends TermImpl implements OrElse {
 	/**
 	 * The default value of the '{@link #getConsequence() <em>Consequence</em>}' attribute.
 	 * <!-- begin-user-doc -->

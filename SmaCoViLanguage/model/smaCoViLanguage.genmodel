@@ -15,24 +15,35 @@
     </genClasses>
     <genClasses ecoreClass="smaCoViLanguage.ecore#//Term">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smaCoViLanguage.ecore#//Term/smartcontract"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smaCoViLanguage.ecore#//Term/orelse"/>
     </genClasses>
     <genClasses ecoreClass="smaCoViLanguage.ecore#//Attribute">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smaCoViLanguage.ecore#//Attribute/AttributeName"/>
     </genClasses>
     <genClasses ecoreClass="smaCoViLanguage.ecore#//Deotonic">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smaCoViLanguage.ecore#//Deotonic/Type"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smaCoViLanguage.ecore#//Deotonic/Deotonic"/>
     </genClasses>
     <genClasses ecoreClass="smaCoViLanguage.ecore#//Condition">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smaCoViLanguage.ecore#//Condition/Condition"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smaCoViLanguage.ecore#//Condition/Operator"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smaCoViLanguage.ecore#//Condition/FirstPartCondition"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smaCoViLanguage.ecore#//Condition/LastConditionPart"/>
     </genClasses>
     <genClasses ecoreClass="smaCoViLanguage.ecore#//Aim">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smaCoViLanguage.ecore#//Aim/Type"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smaCoViLanguage.ecore#//Aim/Aim"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smaCoViLanguage.ecore#//Aim/AimObject"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smaCoViLanguage.ecore#//Aim/Targets"/>
     </genClasses>
     <genClasses ecoreClass="smaCoViLanguage.ecore#//OrElse">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smaCoViLanguage.ecore#//OrElse/Consequence"/>
     </genClasses>
     <genClasses ecoreClass="smaCoViLanguage.ecore#//Adico"/>
+    <genClasses ecoreClass="smaCoViLanguage.ecore#//Main">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smaCoViLanguage.ecore#//Main/smartcontract"/>
+    </genClasses>
+    <genClasses ecoreClass="smaCoViLanguage.ecore#//And"/>
+    <genClasses ecoreClass="smaCoViLanguage.ecore#//SimpleCondition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smaCoViLanguage.ecore#//SimpleCondition/Operator"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smaCoViLanguage.ecore#//SimpleCondition/FirstPartCondition"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>
