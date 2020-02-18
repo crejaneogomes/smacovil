@@ -12,5 +12,5 @@ package smaCoViLanguage;
  * @model
  * @generated
  */
-public interface And extends Term {
+public interface And extends Adico {
 } // And

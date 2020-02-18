@@ -36,7 +36,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="smartcontract" eType="#//SmartContract"
         containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="And" eSuperTypes="#//Term"/>
+  <eClassifiers xsi:type="ecore:EClass" name="And" eSuperTypes="#//Adico"/>
   <eClassifiers xsi:type="ecore:EClass" name="SimpleCondition" eSuperTypes="#//Adico">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Operator" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="FirstPartCondition" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>

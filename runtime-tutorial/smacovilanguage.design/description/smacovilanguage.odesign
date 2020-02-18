@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="smacovilanguage" version="12.0.0.2017041100">
   <ownedViewpoints name="SmaCoViLanguage" modelFileExtension="smacovilanguage">
-    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="SmaCoViLanguage Diagram" domainClass="smaCoViLanguage::Term" enablePopupBars="true">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="SmaCoViLanguage Diagram" domainClass="smaCoViLanguage::Main" enablePopupBars="true">
       <metamodel href="http://www.example.org/smaCoViLanguage#/"/>
       <layout xsi:type="description_1:CompositeLayout" direction="LeftToRight"/>
       <defaultLayer name="Default">
@@ -24,7 +24,7 @@
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
         </nodeMappings>
-        <nodeMappings name="SM_Deotonic" semanticCandidatesExpression="feature:smartcontract" domainClass="smaCoViLanguage::Deotonic">
+        <nodeMappings name="SM_Deotonic" semanticCandidatesExpression="feature:smartcontract96" domainClass="smaCoViLanguage::Deotonic">
           <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="aql:self.Deotonic+'-'+self.Type" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/smacovilanguage.design/icons/Deotonic.gif">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -36,7 +36,19 @@
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
         </nodeMappings>
-        <edgeMappings name="SM_next" sourceMapping="//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_Aim'] //@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_Attribute'] //@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_Condition'] //@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_Deotonic'] //@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_OrElse'] //@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@containerMappings[name='SM_SubTerm']" targetMapping="//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_Aim'] //@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_Attribute'] //@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_Condition'] //@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_Deotonic'] //@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_OrElse'] //@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@containerMappings[name='SM_SubTerm']" targetFinderExpression="service:getNextInstruction()">
+        <nodeMappings name="SM_And" semanticCandidatesExpression="feature:smartcontract" domainClass="smaCoViLanguage::And">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/smacovilanguage.design/icons/And.gif">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="SM_SimpleCondition" semanticCandidatesExpression="feature:smartcontract" domainClass="smaCoViLanguage::SimpleCondition">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/smacovilanguage.design/icons/SimpleCondition.gif">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="SM_next" sourceMapping="//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_Aim'] //@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_Attribute'] //@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_Condition'] //@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_Deotonic'] //@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_OrElse'] //@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@containerMappings[name='SM_SubTerm'] //@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_And'] //@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_SimpleCondition'] //@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@containerMappings[name='SM_SubTerm']/@subNodeMappings[name='SM_subTerm']" targetMapping="//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_Aim'] //@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_Attribute'] //@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_Condition'] //@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_Deotonic'] //@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_OrElse'] //@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@containerMappings[name='SM_SubTerm'] //@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_And'] //@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_SimpleCondition'] //@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@containerMappings[name='SM_SubTerm']/@subNodeMappings[name='SM_subTerm']" targetFinderExpression="service:getNextInstruction()">
           <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription labelSize="12">
@@ -57,6 +69,21 @@
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
             <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="SM_Main" semanticCandidatesExpression="feature:smartcontract" domainClass="smaCoViLanguage::Main" childrenPresentation="List">
+          <subNodeMappings name="SM_Main" semanticCandidatesExpression="feature:smartcontract" domainClass="smaCoViLanguage::SmartContract">
+            <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="service:getLabel()" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="service:getLabel()">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_gray']"/>
           </style>
         </containerMappings>
         <toolSections name="Tools">
@@ -120,6 +147,33 @@
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
                 <subModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="And" nodeMappings="//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_And']" extraMappings="//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@containerMappings[name='SM_SubTerm']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="smaCoViLanguage::And" referenceName="smartcontract"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="SimpleCondition" nodeMappings="//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_SimpleCondition']" extraMappings="//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@containerMappings[name='SM_SubTerm']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="smaCoViLanguage::SimpleCondition" referenceName="smartcontract"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Main" containerMappings="//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@containerMappings[name='SM_Main']" extraMappings="//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@containerMappings[name='SM_SubTerm']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="smaCoViLanguage::Main" referenceName="smartcontract"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>

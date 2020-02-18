@@ -613,7 +613,7 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AND__NAME = TERM__NAME;
+	int AND__NAME = ADICO__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Owner</b></em>' attribute.
@@ -622,25 +622,7 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AND__OWNER = TERM__OWNER;
-
-	/**
-	 * The feature id for the '<em><b>Smartcontract</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int AND__SMARTCONTRACT = TERM__SMARTCONTRACT;
-
-	/**
-	 * The feature id for the '<em><b>Orelse</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int AND__ORELSE = TERM__ORELSE;
+	int AND__OWNER = ADICO__OWNER;
 
 	/**
 	 * The number of structural features of the '<em>And</em>' class.
@@ -649,7 +631,7 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AND_FEATURE_COUNT = TERM_FEATURE_COUNT + 0;
+	int AND_FEATURE_COUNT = ADICO_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of operations of the '<em>And</em>' class.
@@ -658,7 +640,7 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AND_OPERATION_COUNT = TERM_OPERATION_COUNT + 0;
+	int AND_OPERATION_COUNT = ADICO_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link smaCoViLanguage.impl.SimpleConditionImpl <em>Simple Condition</em>}' class.

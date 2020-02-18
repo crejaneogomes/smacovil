@@ -528,7 +528,7 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 		orElseEClass.getESuperTypes().add(this.getTerm());
 		adicoEClass.getESuperTypes().add(this.getSmartContract());
 		mainEClass.getESuperTypes().add(this.getSmartContract());
-		andEClass.getESuperTypes().add(this.getTerm());
+		andEClass.getESuperTypes().add(this.getAdico());
 		simpleConditionEClass.getESuperTypes().add(this.getAdico());
 
 		// Initialize classes, features, and operations; add parameters

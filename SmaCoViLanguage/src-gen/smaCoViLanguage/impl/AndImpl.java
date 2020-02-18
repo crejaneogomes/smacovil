@@ -14,7 +14,7 @@ import smaCoViLanguage.SmaCoViLanguagePackage;
  *
  * @generated
  */
-public class AndImpl extends TermImpl implements And {
+public class AndImpl extends AdicoImpl implements And {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

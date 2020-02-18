@@ -159,7 +159,7 @@ public class SmaCoViLanguageSwitch<T> extends Switch<T> {
 			And and = (And) theEObject;
 			T result = caseAnd(and);
 			if (result == null)
-				result = caseTerm(and);
+				result = caseAdico(and);
 			if (result == null)
 				result = caseSmartContract(and);
 			if (result == null)
