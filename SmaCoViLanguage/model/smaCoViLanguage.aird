@@ -712,7 +712,7 @@
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="__0B99E3-EeqeS6CnTIu2gQ" iconPath="/SmaCoViLanguage.edit/icons/full/obj16/Main.gif" description="__0B98k3-EeqeS6CnTIu2gQ" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="Liquid" foregroundColor="255,252,216"/>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_6z_Lhk3-EeqeS6CnTIu2gQ" name="[0..1] smartcontract" sourceNode="_6z66EE3-EeqeS6CnTIu2gQ" targetNode="_4usHEPUWEemAc5s9kGH-Fw">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_6z_Lhk3-EeqeS6CnTIu2gQ" name="[0..*] smartcontract" sourceNode="_6z66EE3-EeqeS6CnTIu2gQ" targetNode="_4usHEPUWEemAc5s9kGH-Fw">
       <target xmi:type="ecore:EReference" href="smaCoViLanguage.ecore#//Main/smartcontract"/>
       <semanticElements xmi:type="ecore:EReference" href="smaCoViLanguage.ecore#//Main/smartcontract"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_6z_ykE3-EeqeS6CnTIu2gQ" description="_6UVLUDDDEeqo9cLvKhEvGQ" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">

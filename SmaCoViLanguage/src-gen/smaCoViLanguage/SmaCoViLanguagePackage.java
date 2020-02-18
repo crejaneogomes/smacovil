@@ -570,7 +570,7 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	int MAIN__OWNER = SMART_CONTRACT__OWNER;
 
 	/**
-	 * The feature id for the '<em><b>Smartcontract</b></em>' containment reference.
+	 * The feature id for the '<em><b>Smartcontract</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -940,10 +940,10 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	EClass getMain();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link smaCoViLanguage.Main#getSmartcontract <em>Smartcontract</em>}'.
+	 * Returns the meta object for the containment reference list '{@link smaCoViLanguage.Main#getSmartcontract <em>Smartcontract</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Smartcontract</em>'.
+	 * @return the meta object for the containment reference list '<em>Smartcontract</em>'.
 	 * @see smaCoViLanguage.Main#getSmartcontract()
 	 * @see #getMain()
 	 * @generated
@@ -1210,7 +1210,7 @@ public interface SmaCoViLanguagePackage extends EPackage {
 		EClass MAIN = eINSTANCE.getMain();
 
 		/**
-		 * The meta object literal for the '<em><b>Smartcontract</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Smartcontract</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated

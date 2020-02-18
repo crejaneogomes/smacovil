@@ -585,7 +585,7 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 		initEClass(adicoEClass, Adico.class, "Adico", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(mainEClass, Main.class, "Main", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getMain_Smartcontract(), this.getSmartContract(), null, "smartcontract", null, 0, 1, Main.class,
+		initEReference(getMain_Smartcontract(), this.getSmartContract(), null, "smartcontract", null, 0, -1, Main.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 

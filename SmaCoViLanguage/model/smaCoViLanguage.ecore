@@ -33,8 +33,8 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Adico" abstract="true" eSuperTypes="#//SmartContract"/>
   <eClassifiers xsi:type="ecore:EClass" name="Main" eSuperTypes="#//SmartContract">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="smartcontract" eType="#//SmartContract"
-        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="smartcontract" upperBound="-1"
+        eType="#//SmartContract" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="And" eSuperTypes="#//Adico"/>
   <eClassifiers xsi:type="ecore:EClass" name="SimpleCondition" eSuperTypes="#//Adico">

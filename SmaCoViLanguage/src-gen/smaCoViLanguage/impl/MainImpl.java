@@ -2,12 +2,13 @@
  */
 package smaCoViLanguage.impl;
 
-import org.eclipse.emf.common.notify.Notification;
+import java.util.Collection;
 import org.eclipse.emf.common.notify.NotificationChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 import smaCoViLanguage.Main;
 import smaCoViLanguage.SmaCoViLanguagePackage;
 import smaCoViLanguage.SmartContract;
@@ -27,14 +28,14 @@ import smaCoViLanguage.SmartContract;
  */
 public class MainImpl extends SmartContractImpl implements Main {
 	/**
-	 * The cached value of the '{@link #getSmartcontract() <em>Smartcontract</em>}' containment reference.
+	 * The cached value of the '{@link #getSmartcontract() <em>Smartcontract</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getSmartcontract()
 	 * @generated
 	 * @ordered
 	 */
-	protected SmartContract smartcontract;
+	protected EList<SmartContract> smartcontract;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -60,49 +61,12 @@ public class MainImpl extends SmartContractImpl implements Main {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SmartContract getSmartcontract() {
-		return smartcontract;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetSmartcontract(SmartContract newSmartcontract, NotificationChain msgs) {
-		SmartContract oldSmartcontract = smartcontract;
-		smartcontract = newSmartcontract;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					SmaCoViLanguagePackage.MAIN__SMARTCONTRACT, oldSmartcontract, newSmartcontract);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
+	public EList<SmartContract> getSmartcontract() {
+		if (smartcontract == null) {
+			smartcontract = new EObjectContainmentEList<SmartContract>(SmartContract.class, this,
+					SmaCoViLanguagePackage.MAIN__SMARTCONTRACT);
 		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setSmartcontract(SmartContract newSmartcontract) {
-		if (newSmartcontract != smartcontract) {
-			NotificationChain msgs = null;
-			if (smartcontract != null)
-				msgs = ((InternalEObject) smartcontract).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - SmaCoViLanguagePackage.MAIN__SMARTCONTRACT, null, msgs);
-			if (newSmartcontract != null)
-				msgs = ((InternalEObject) newSmartcontract).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - SmaCoViLanguagePackage.MAIN__SMARTCONTRACT, null, msgs);
-			msgs = basicSetSmartcontract(newSmartcontract, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SmaCoViLanguagePackage.MAIN__SMARTCONTRACT,
-					newSmartcontract, newSmartcontract));
+		return smartcontract;
 	}
 
 	/**
@@ -114,7 +78,7 @@ public class MainImpl extends SmartContractImpl implements Main {
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case SmaCoViLanguagePackage.MAIN__SMARTCONTRACT:
-			return basicSetSmartcontract(null, msgs);
+			return ((InternalEList<?>) getSmartcontract()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -143,7 +107,8 @@ public class MainImpl extends SmartContractImpl implements Main {
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 		case SmaCoViLanguagePackage.MAIN__SMARTCONTRACT:
-			setSmartcontract((SmartContract) newValue);
+			getSmartcontract().clear();
+			getSmartcontract().addAll((Collection<? extends SmartContract>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -158,7 +123,7 @@ public class MainImpl extends SmartContractImpl implements Main {
 	public void eUnset(int featureID) {
 		switch (featureID) {
 		case SmaCoViLanguagePackage.MAIN__SMARTCONTRACT:
-			setSmartcontract((SmartContract) null);
+			getSmartcontract().clear();
 			return;
 		}
 		super.eUnset(featureID);
@@ -173,7 +138,7 @@ public class MainImpl extends SmartContractImpl implements Main {
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 		case SmaCoViLanguagePackage.MAIN__SMARTCONTRACT:
-			return smartcontract != null;
+			return smartcontract != null && !smartcontract.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

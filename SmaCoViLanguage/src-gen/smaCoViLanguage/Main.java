@@ -2,6 +2,8 @@
  */
 package smaCoViLanguage;
 
+import org.eclipse.emf.common.util.EList;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Main</b></em>'.
@@ -20,29 +22,19 @@ package smaCoViLanguage;
  */
 public interface Main extends SmartContract {
 	/**
-	 * Returns the value of the '<em><b>Smartcontract</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Smartcontract</b></em>' containment reference list.
+	 * The list contents are of type {@link smaCoViLanguage.SmartContract}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Smartcontract</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Smartcontract</em>' containment reference.
-	 * @see #setSmartcontract(SmartContract)
+	 * @return the value of the '<em>Smartcontract</em>' containment reference list.
 	 * @see smaCoViLanguage.SmaCoViLanguagePackage#getMain_Smartcontract()
 	 * @model containment="true"
 	 * @generated
 	 */
-	SmartContract getSmartcontract();
-
-	/**
-	 * Sets the value of the '{@link smaCoViLanguage.Main#getSmartcontract <em>Smartcontract</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Smartcontract</em>' containment reference.
-	 * @see #getSmartcontract()
-	 * @generated
-	 */
-	void setSmartcontract(SmartContract value);
+	EList<SmartContract> getSmartcontract();
 
 } // Main
