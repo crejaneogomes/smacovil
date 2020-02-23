@@ -108,9 +108,7 @@ public class MainItemProvider extends SmartContractItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((Main) object).getName();
-		return label == null || label.length() == 0 ? getString("_UI_Main_type")
-				: getString("_UI_Main_type") + " " + label;
+		return getString("_UI_Main_type");
 	}
 
 	/**

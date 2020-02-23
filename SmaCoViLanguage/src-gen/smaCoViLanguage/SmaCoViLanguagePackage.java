@@ -67,31 +67,13 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	int SMART_CONTRACT = 0;
 
 	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SMART_CONTRACT__NAME = 0;
-
-	/**
-	 * The feature id for the '<em><b>Owner</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SMART_CONTRACT__OWNER = 1;
-
-	/**
 	 * The number of structural features of the '<em>Smart Contract</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SMART_CONTRACT_FEATURE_COUNT = 2;
+	int SMART_CONTRACT_FEATURE_COUNT = 0;
 
 	/**
 	 * The number of operations of the '<em>Smart Contract</em>' class.
@@ -111,24 +93,6 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	 * @generated
 	 */
 	int TERM = 1;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TERM__NAME = SMART_CONTRACT__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Owner</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TERM__OWNER = SMART_CONTRACT__OWNER;
 
 	/**
 	 * The feature id for the '<em><b>Smartcontract</b></em>' containment reference list.
@@ -177,24 +141,6 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	int ADICO = 7;
 
 	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADICO__NAME = SMART_CONTRACT__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Owner</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADICO__OWNER = SMART_CONTRACT__OWNER;
-
-	/**
 	 * The number of structural features of the '<em>Adico</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -221,24 +167,6 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	 * @generated
 	 */
 	int ATTRIBUTE = 2;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ATTRIBUTE__NAME = ADICO__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Owner</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ATTRIBUTE__OWNER = ADICO__OWNER;
 
 	/**
 	 * The feature id for the '<em><b>Attribute Name</b></em>' attribute.
@@ -278,24 +206,6 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	int DEONTIC = 3;
 
 	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DEONTIC__NAME = ADICO__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Owner</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DEONTIC__OWNER = ADICO__OWNER;
-
-	/**
 	 * The feature id for the '<em><b>Deontic</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -331,24 +241,6 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	 * @generated
 	 */
 	int CONDITION = 4;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITION__NAME = ADICO__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Owner</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITION__OWNER = ADICO__OWNER;
 
 	/**
 	 * The feature id for the '<em><b>Operator</b></em>' attribute.
@@ -406,24 +298,6 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	int AIM = 5;
 
 	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int AIM__NAME = ADICO__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Owner</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int AIM__OWNER = ADICO__OWNER;
-
-	/**
 	 * The feature id for the '<em><b>Aim</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -477,24 +351,6 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	 * @generated
 	 */
 	int OR_ELSE = 6;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OR_ELSE__NAME = TERM__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Owner</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OR_ELSE__OWNER = TERM__OWNER;
 
 	/**
 	 * The feature id for the '<em><b>Smartcontract</b></em>' containment reference list.
@@ -552,24 +408,6 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	int MAIN = 8;
 
 	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MAIN__NAME = SMART_CONTRACT__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Owner</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MAIN__OWNER = SMART_CONTRACT__OWNER;
-
-	/**
 	 * The feature id for the '<em><b>Smartcontract</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -607,24 +445,6 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	int AND = 9;
 
 	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int AND__NAME = ADICO__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Owner</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int AND__OWNER = ADICO__OWNER;
-
-	/**
 	 * The number of structural features of the '<em>And</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -651,24 +471,6 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	 * @generated
 	 */
 	int SIMPLE_CONDITION = 10;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SIMPLE_CONDITION__NAME = ADICO__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Owner</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SIMPLE_CONDITION__OWNER = ADICO__OWNER;
 
 	/**
 	 * The feature id for the '<em><b>Operator</b></em>' attribute.
@@ -715,28 +517,6 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	 * @generated
 	 */
 	EClass getSmartContract();
-
-	/**
-	 * Returns the meta object for the attribute '{@link smaCoViLanguage.SmartContract#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see smaCoViLanguage.SmartContract#getName()
-	 * @see #getSmartContract()
-	 * @generated
-	 */
-	EAttribute getSmartContract_Name();
-
-	/**
-	 * Returns the meta object for the attribute '{@link smaCoViLanguage.SmartContract#getOwner <em>Owner</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Owner</em>'.
-	 * @see smaCoViLanguage.SmartContract#getOwner()
-	 * @see #getSmartContract()
-	 * @generated
-	 */
-	EAttribute getSmartContract_Owner();
 
 	/**
 	 * Returns the meta object for class '{@link smaCoViLanguage.Term <em>Term</em>}'.
@@ -1024,22 +804,6 @@ public interface SmaCoViLanguagePackage extends EPackage {
 		 * @generated
 		 */
 		EClass SMART_CONTRACT = eINSTANCE.getSmartContract();
-
-		/**
-		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute SMART_CONTRACT__NAME = eINSTANCE.getSmartContract_Name();
-
-		/**
-		 * The meta object literal for the '<em><b>Owner</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute SMART_CONTRACT__OWNER = eINSTANCE.getSmartContract_Owner();
 
 		/**
 		 * The meta object literal for the '{@link smaCoViLanguage.impl.TermImpl <em>Term</em>}' class.

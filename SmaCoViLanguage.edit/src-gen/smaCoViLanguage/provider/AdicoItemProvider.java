@@ -10,8 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 
-import smaCoViLanguage.Adico;
-
 /**
  * This is the item provider adapter for a {@link smaCoViLanguage.Adico} object.
  * <!-- begin-user-doc -->
@@ -73,9 +71,7 @@ public class AdicoItemProvider extends SmartContractItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((Adico) object).getName();
-		return label == null || label.length() == 0 ? getString("_UI_Adico_type")
-				: getString("_UI_Adico_type") + " " + label;
+		return getString("_UI_Adico_type");
 	}
 
 	/**

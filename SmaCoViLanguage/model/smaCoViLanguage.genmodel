@@ -9,10 +9,7 @@
   <foreignModel>smaCoViLanguage.ecore</foreignModel>
   <testsDirectory xsi:nil="true"/>
   <genPackages prefix="SmaCoViLanguage" disposableProviderFactory="true" ecorePackage="smaCoViLanguage.ecore#/">
-    <genClasses ecoreClass="smaCoViLanguage.ecore#//SmartContract">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smaCoViLanguage.ecore#//SmartContract/Name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smaCoViLanguage.ecore#//SmartContract/Owner"/>
-    </genClasses>
+    <genClasses ecoreClass="smaCoViLanguage.ecore#//SmartContract"/>
     <genClasses ecoreClass="smaCoViLanguage.ecore#//Term">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smaCoViLanguage.ecore#//Term/smartcontract"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smaCoViLanguage.ecore#//Term/orelse"/>

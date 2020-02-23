@@ -124,7 +124,7 @@ public class AimItemProvider extends AdicoItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((Aim) object).getName();
+		String label = ((Aim) object).getAim();
 		return label == null || label.length() == 0 ? getString("_UI_Aim_type")
 				: getString("_UI_Aim_type") + " " + label;
 	}

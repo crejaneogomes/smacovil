@@ -127,7 +127,7 @@ public class ConditionItemProvider extends AdicoItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((Condition) object).getName();
+		String label = ((Condition) object).getOperator();
 		return label == null || label.length() == 0 ? getString("_UI_Condition_type")
 				: getString("_UI_Condition_type") + " " + label;
 	}

@@ -190,24 +190,6 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSmartContract_Name() {
-		return (EAttribute) smartContractEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getSmartContract_Owner() {
-		return (EAttribute) smartContractEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getTerm() {
 		return termEClass;
 	}
@@ -449,8 +431,6 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 
 		// Create classes and their features
 		smartContractEClass = createEClass(SMART_CONTRACT);
-		createEAttribute(smartContractEClass, SMART_CONTRACT__NAME);
-		createEAttribute(smartContractEClass, SMART_CONTRACT__OWNER);
 
 		termEClass = createEClass(TERM);
 		createEReference(termEClass, TERM__SMARTCONTRACT);
@@ -534,11 +514,6 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 		// Initialize classes, features, and operations; add parameters
 		initEClass(smartContractEClass, SmartContract.class, "SmartContract", IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getSmartContract_Name(), theXMLTypePackage.getString(), "Name", null, 0, 1, SmartContract.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getSmartContract_Owner(), theXMLTypePackage.getString(), "Owner", null, 0, 1,
-				SmartContract.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-				!IS_DERIVED, IS_ORDERED);
 
 		initEClass(termEClass, Term.class, "Term", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getTerm_Smartcontract(), this.getSmartContract(), null, "smartcontract", null, 0, -1, Term.class,

@@ -107,9 +107,7 @@ public class TermItemProvider extends SmartContractItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((Term) object).getName();
-		return label == null || label.length() == 0 ? getString("_UI_Term_type")
-				: getString("_UI_Term_type") + " " + label;
+		return getString("_UI_Term_type");
 	}
 
 	/**

@@ -98,14 +98,6 @@
         <children xmi:type="notation:Node" xmi:id="_4vAQIPUWEemAc5s9kGH-Fw" type="2003" element="_4usHEPUWEemAc5s9kGH-Fw">
           <children xmi:type="notation:Node" xmi:id="_4vCFUPUWEemAc5s9kGH-Fw" type="5007"/>
           <children xmi:type="notation:Node" xmi:id="_4vDTcPUWEemAc5s9kGH-Fw" type="7004">
-            <children xmi:type="notation:Node" xmi:id="_i-8yQPUYEemAc5s9kGH-Fw" type="3010" element="_i-zoUPUYEemAc5s9kGH-Fw">
-              <styles xmi:type="notation:FontStyle" xmi:id="_i-8yQfUYEemAc5s9kGH-Fw" fontColor="2697711" fontName="Segoe UI" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_i-8yQvUYEemAc5s9kGH-Fw"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_lEficPUYEemAc5s9kGH-Fw" type="3010" element="_lEXmoPUYEemAc5s9kGH-Fw">
-              <styles xmi:type="notation:FontStyle" xmi:id="_lEficfUYEemAc5s9kGH-Fw" fontColor="2697711" fontName="Segoe UI" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_lEficvUYEemAc5s9kGH-Fw"/>
-            </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_4vDTcfUWEemAc5s9kGH-Fw"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_4vDTcvUWEemAc5s9kGH-Fw"/>
           </children>
@@ -467,22 +459,6 @@
         <labelFormat>italic</labelFormat>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
-      <ownedElements xmi:type="diagram:DNodeListElement" uid="_i-zoUPUYEemAc5s9kGH-Fw" name="Name : String" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="smaCoViLanguage.ecore#//SmartContract/Name"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="smaCoViLanguage.ecore#//SmartContract/Name"/>
-        <ownedStyle xmi:type="diagram:BundledImage" uid="_rj7EDPUYEemAc5s9kGH-Fw" labelAlignment="LEFT">
-          <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
-      </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" uid="_lEXmoPUYEemAc5s9kGH-Fw" name="Owner : String" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="smaCoViLanguage.ecore#//SmartContract/Owner"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="smaCoViLanguage.ecore#//SmartContract/Owner"/>
-        <ownedStyle xmi:type="diagram:BundledImage" uid="_uNtwwvUYEemAc5s9kGH-Fw" labelAlignment="LEFT">
-          <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
-      </ownedElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_DXUSoPUXEemAc5s9kGH-Fw" name="Term" tooltipText="" outgoingEdges="_6UUkQDDDEeqo9cLvKhEvGQ _n1rz4jDFEeqo9cLvKhEvGQ _rqcx3E4EEeqeS6CnTIu2gQ" incomingEdges="_6_ivwk4IEeqeS6CnTIu2gQ" width="12" height="10">
       <target xmi:type="ecore:EClass" href="smaCoViLanguage.ecore#//Term"/>

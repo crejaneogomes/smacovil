@@ -111,7 +111,7 @@ public class SimpleConditionItemProvider extends AdicoItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((SimpleCondition) object).getName();
+		String label = ((SimpleCondition) object).getOperator();
 		return label == null || label.length() == 0 ? getString("_UI_SimpleCondition_type")
 				: getString("_UI_SimpleCondition_type") + " " + label;
 	}

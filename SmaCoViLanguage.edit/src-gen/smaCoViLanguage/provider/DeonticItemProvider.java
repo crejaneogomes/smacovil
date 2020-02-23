@@ -94,7 +94,7 @@ public class DeonticItemProvider extends AdicoItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((Deontic) object).getName();
+		String label = ((Deontic) object).getDeontic();
 		return label == null || label.length() == 0 ? getString("_UI_Deontic_type")
 				: getString("_UI_Deontic_type") + " " + label;
 	}
