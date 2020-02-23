@@ -7,49 +7,50 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import smaCoViLanguage.Deotonic;
+
+import smaCoViLanguage.Deontic;
 import smaCoViLanguage.SmaCoViLanguagePackage;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Deotonic</b></em>'.
+ * An implementation of the model object '<em><b>Deontic</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link smaCoViLanguage.impl.DeotonicImpl#getDeotonic <em>Deotonic</em>}</li>
+ *   <li>{@link smaCoViLanguage.impl.DeonticImpl#getDeontic <em>Deontic</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class DeotonicImpl extends AdicoImpl implements Deotonic {
+public class DeonticImpl extends AdicoImpl implements Deontic {
 	/**
-	 * The default value of the '{@link #getDeotonic() <em>Deotonic</em>}' attribute.
+	 * The default value of the '{@link #getDeontic() <em>Deontic</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDeotonic()
+	 * @see #getDeontic()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String DEOTONIC_EDEFAULT = null;
+	protected static final String DEONTIC_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getDeotonic() <em>Deotonic</em>}' attribute.
+	 * The cached value of the '{@link #getDeontic() <em>Deontic</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDeotonic()
+	 * @see #getDeontic()
 	 * @generated
 	 * @ordered
 	 */
-	protected String deotonic = DEOTONIC_EDEFAULT;
+	protected String deontic = DEONTIC_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DeotonicImpl() {
+	protected DeonticImpl() {
 		super();
 	}
 
@@ -60,7 +61,7 @@ public class DeotonicImpl extends AdicoImpl implements Deotonic {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return SmaCoViLanguagePackage.Literals.DEOTONIC;
+		return SmaCoViLanguagePackage.Literals.DEONTIC;
 	}
 
 	/**
@@ -68,8 +69,8 @@ public class DeotonicImpl extends AdicoImpl implements Deotonic {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getDeotonic() {
-		return deotonic;
+	public String getDeontic() {
+		return deontic;
 	}
 
 	/**
@@ -77,12 +78,12 @@ public class DeotonicImpl extends AdicoImpl implements Deotonic {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDeotonic(String newDeotonic) {
-		String oldDeotonic = deotonic;
-		deotonic = newDeotonic;
+	public void setDeontic(String newDeontic) {
+		String oldDeontic = deontic;
+		deontic = newDeontic;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SmaCoViLanguagePackage.DEOTONIC__DEOTONIC,
-					oldDeotonic, deotonic));
+			eNotify(new ENotificationImpl(this, Notification.SET, SmaCoViLanguagePackage.DEONTIC__DEONTIC, oldDeontic,
+					deontic));
 	}
 
 	/**
@@ -93,8 +94,8 @@ public class DeotonicImpl extends AdicoImpl implements Deotonic {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case SmaCoViLanguagePackage.DEOTONIC__DEOTONIC:
-			return getDeotonic();
+		case SmaCoViLanguagePackage.DEONTIC__DEONTIC:
+			return getDeontic();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -107,8 +108,8 @@ public class DeotonicImpl extends AdicoImpl implements Deotonic {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case SmaCoViLanguagePackage.DEOTONIC__DEOTONIC:
-			setDeotonic((String) newValue);
+		case SmaCoViLanguagePackage.DEONTIC__DEONTIC:
+			setDeontic((String) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -122,8 +123,8 @@ public class DeotonicImpl extends AdicoImpl implements Deotonic {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case SmaCoViLanguagePackage.DEOTONIC__DEOTONIC:
-			setDeotonic(DEOTONIC_EDEFAULT);
+		case SmaCoViLanguagePackage.DEONTIC__DEONTIC:
+			setDeontic(DEONTIC_EDEFAULT);
 			return;
 		}
 		super.eUnset(featureID);
@@ -137,8 +138,8 @@ public class DeotonicImpl extends AdicoImpl implements Deotonic {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case SmaCoViLanguagePackage.DEOTONIC__DEOTONIC:
-			return DEOTONIC_EDEFAULT == null ? deotonic != null : !DEOTONIC_EDEFAULT.equals(deotonic);
+		case SmaCoViLanguagePackage.DEONTIC__DEONTIC:
+			return DEONTIC_EDEFAULT == null ? deontic != null : !DEONTIC_EDEFAULT.equals(deontic);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -154,10 +155,10 @@ public class DeotonicImpl extends AdicoImpl implements Deotonic {
 			return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (Deotonic: ");
-		result.append(deotonic);
+		result.append(" (Deontic: ");
+		result.append(deontic);
 		result.append(')');
 		return result.toString();
 	}
 
-} //DeotonicImpl
+} //DeonticImpl

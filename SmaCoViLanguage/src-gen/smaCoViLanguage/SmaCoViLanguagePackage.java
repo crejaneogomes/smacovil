@@ -268,14 +268,14 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	int ATTRIBUTE_OPERATION_COUNT = ADICO_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link smaCoViLanguage.impl.DeotonicImpl <em>Deotonic</em>}' class.
+	 * The meta object id for the '{@link smaCoViLanguage.impl.DeonticImpl <em>Deontic</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see smaCoViLanguage.impl.DeotonicImpl
-	 * @see smaCoViLanguage.impl.SmaCoViLanguagePackageImpl#getDeotonic()
+	 * @see smaCoViLanguage.impl.DeonticImpl
+	 * @see smaCoViLanguage.impl.SmaCoViLanguagePackageImpl#getDeontic()
 	 * @generated
 	 */
-	int DEOTONIC = 3;
+	int DEONTIC = 3;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -284,7 +284,7 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEOTONIC__NAME = ADICO__NAME;
+	int DEONTIC__NAME = ADICO__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Owner</b></em>' attribute.
@@ -293,34 +293,34 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEOTONIC__OWNER = ADICO__OWNER;
+	int DEONTIC__OWNER = ADICO__OWNER;
 
 	/**
-	 * The feature id for the '<em><b>Deotonic</b></em>' attribute.
+	 * The feature id for the '<em><b>Deontic</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DEOTONIC__DEOTONIC = ADICO_FEATURE_COUNT + 0;
+	int DEONTIC__DEONTIC = ADICO_FEATURE_COUNT + 0;
 
 	/**
-	 * The number of structural features of the '<em>Deotonic</em>' class.
+	 * The number of structural features of the '<em>Deontic</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DEOTONIC_FEATURE_COUNT = ADICO_FEATURE_COUNT + 1;
+	int DEONTIC_FEATURE_COUNT = ADICO_FEATURE_COUNT + 1;
 
 	/**
-	 * The number of operations of the '<em>Deotonic</em>' class.
+	 * The number of operations of the '<em>Deontic</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DEOTONIC_OPERATION_COUNT = ADICO_OPERATION_COUNT + 0;
+	int DEONTIC_OPERATION_COUNT = ADICO_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link smaCoViLanguage.impl.ConditionImpl <em>Condition</em>}' class.
@@ -792,25 +792,25 @@ public interface SmaCoViLanguagePackage extends EPackage {
 	EAttribute getAttribute_AttributeName();
 
 	/**
-	 * Returns the meta object for class '{@link smaCoViLanguage.Deotonic <em>Deotonic</em>}'.
+	 * Returns the meta object for class '{@link smaCoViLanguage.Deontic <em>Deontic</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Deotonic</em>'.
-	 * @see smaCoViLanguage.Deotonic
+	 * @return the meta object for class '<em>Deontic</em>'.
+	 * @see smaCoViLanguage.Deontic
 	 * @generated
 	 */
-	EClass getDeotonic();
+	EClass getDeontic();
 
 	/**
-	 * Returns the meta object for the attribute '{@link smaCoViLanguage.Deotonic#getDeotonic <em>Deotonic</em>}'.
+	 * Returns the meta object for the attribute '{@link smaCoViLanguage.Deontic#getDeontic <em>Deontic</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Deotonic</em>'.
-	 * @see smaCoViLanguage.Deotonic#getDeotonic()
-	 * @see #getDeotonic()
+	 * @return the meta object for the attribute '<em>Deontic</em>'.
+	 * @see smaCoViLanguage.Deontic#getDeontic()
+	 * @see #getDeontic()
 	 * @generated
 	 */
-	EAttribute getDeotonic_Deotonic();
+	EAttribute getDeontic_Deontic();
 
 	/**
 	 * Returns the meta object for class '{@link smaCoViLanguage.Condition <em>Condition</em>}'.
@@ -1086,22 +1086,22 @@ public interface SmaCoViLanguagePackage extends EPackage {
 		EAttribute ATTRIBUTE__ATTRIBUTE_NAME = eINSTANCE.getAttribute_AttributeName();
 
 		/**
-		 * The meta object literal for the '{@link smaCoViLanguage.impl.DeotonicImpl <em>Deotonic</em>}' class.
+		 * The meta object literal for the '{@link smaCoViLanguage.impl.DeonticImpl <em>Deontic</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see smaCoViLanguage.impl.DeotonicImpl
-		 * @see smaCoViLanguage.impl.SmaCoViLanguagePackageImpl#getDeotonic()
+		 * @see smaCoViLanguage.impl.DeonticImpl
+		 * @see smaCoViLanguage.impl.SmaCoViLanguagePackageImpl#getDeontic()
 		 * @generated
 		 */
-		EClass DEOTONIC = eINSTANCE.getDeotonic();
+		EClass DEONTIC = eINSTANCE.getDeontic();
 
 		/**
-		 * The meta object literal for the '<em><b>Deotonic</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Deontic</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DEOTONIC__DEOTONIC = eINSTANCE.getDeotonic_Deotonic();
+		EAttribute DEONTIC__DEONTIC = eINSTANCE.getDeontic_Deontic();
 
 		/**
 		 * The meta object literal for the '{@link smaCoViLanguage.impl.ConditionImpl <em>Condition</em>}' class.

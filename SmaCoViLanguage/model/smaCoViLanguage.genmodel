@@ -20,8 +20,8 @@
     <genClasses ecoreClass="smaCoViLanguage.ecore#//Attribute">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smaCoViLanguage.ecore#//Attribute/AttributeName"/>
     </genClasses>
-    <genClasses ecoreClass="smaCoViLanguage.ecore#//Deotonic">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smaCoViLanguage.ecore#//Deotonic/Deotonic"/>
+    <genClasses ecoreClass="smaCoViLanguage.ecore#//Deontic">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smaCoViLanguage.ecore#//Deontic/Deontic"/>
     </genClasses>
     <genClasses ecoreClass="smaCoViLanguage.ecore#//Condition">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smaCoViLanguage.ecore#//Condition/Operator"/>

@@ -15,8 +15,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="Attribute" eSuperTypes="#//Adico">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="AttributeName" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Deotonic" eSuperTypes="#//Adico">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Deotonic" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Deontic" eSuperTypes="#//Adico">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Deontic" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Condition" eSuperTypes="#//Adico">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Operator" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>

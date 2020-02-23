@@ -16,7 +16,7 @@ import smaCoViLanguage.Aim;
 import smaCoViLanguage.And;
 import smaCoViLanguage.Attribute;
 import smaCoViLanguage.Condition;
-import smaCoViLanguage.Deotonic;
+import smaCoViLanguage.Deontic;
 import smaCoViLanguage.Main;
 import smaCoViLanguage.OrElse;
 import smaCoViLanguage.SimpleCondition;
@@ -58,7 +58,7 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass deotonicEClass = null;
+	private EClass deonticEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -253,8 +253,8 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getDeotonic() {
-		return deotonicEClass;
+	public EClass getDeontic() {
+		return deonticEClass;
 	}
 
 	/**
@@ -262,8 +262,8 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDeotonic_Deotonic() {
-		return (EAttribute) deotonicEClass.getEStructuralFeatures().get(0);
+	public EAttribute getDeontic_Deontic() {
+		return (EAttribute) deonticEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -459,8 +459,8 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 		attributeEClass = createEClass(ATTRIBUTE);
 		createEAttribute(attributeEClass, ATTRIBUTE__ATTRIBUTE_NAME);
 
-		deotonicEClass = createEClass(DEOTONIC);
-		createEAttribute(deotonicEClass, DEOTONIC__DEOTONIC);
+		deonticEClass = createEClass(DEONTIC);
+		createEAttribute(deonticEClass, DEONTIC__DEONTIC);
 
 		conditionEClass = createEClass(CONDITION);
 		createEAttribute(conditionEClass, CONDITION__OPERATOR);
@@ -522,7 +522,7 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 		// Add supertypes to classes
 		termEClass.getESuperTypes().add(this.getSmartContract());
 		attributeEClass.getESuperTypes().add(this.getAdico());
-		deotonicEClass.getESuperTypes().add(this.getAdico());
+		deonticEClass.getESuperTypes().add(this.getAdico());
 		conditionEClass.getESuperTypes().add(this.getAdico());
 		aimEClass.getESuperTypes().add(this.getAdico());
 		orElseEClass.getESuperTypes().add(this.getTerm());
@@ -554,9 +554,8 @@ public class SmaCoViLanguagePackageImpl extends EPackageImpl implements SmaCoViL
 				Attribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
 
-		initEClass(deotonicEClass, Deotonic.class, "Deotonic", !IS_ABSTRACT, !IS_INTERFACE,
-				IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getDeotonic_Deotonic(), theXMLTypePackage.getString(), "Deotonic", null, 0, 1, Deotonic.class,
+		initEClass(deonticEClass, Deontic.class, "Deontic", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getDeontic_Deontic(), theXMLTypePackage.getString(), "Deontic", null, 0, 1, Deontic.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(conditionEClass, Condition.class, "Condition", !IS_ABSTRACT, !IS_INTERFACE,

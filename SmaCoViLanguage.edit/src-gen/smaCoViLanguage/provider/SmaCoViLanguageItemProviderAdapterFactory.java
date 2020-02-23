@@ -119,26 +119,26 @@ public class SmaCoViLanguageItemProviderAdapterFactory extends SmaCoViLanguageAd
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link smaCoViLanguage.Deotonic} instances.
+	 * This keeps track of the one adapter used for all {@link smaCoViLanguage.Deontic} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DeotonicItemProvider deotonicItemProvider;
+	protected DeonticItemProvider deonticItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link smaCoViLanguage.Deotonic}.
+	 * This creates an adapter for a {@link smaCoViLanguage.Deontic}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createDeotonicAdapter() {
-		if (deotonicItemProvider == null) {
-			deotonicItemProvider = new DeotonicItemProvider(this);
+	public Adapter createDeonticAdapter() {
+		if (deonticItemProvider == null) {
+			deonticItemProvider = new DeonticItemProvider(this);
 		}
 
-		return deotonicItemProvider;
+		return deonticItemProvider;
 	}
 
 	/**
@@ -382,8 +382,8 @@ public class SmaCoViLanguageItemProviderAdapterFactory extends SmaCoViLanguageAd
 			termItemProvider.dispose();
 		if (attributeItemProvider != null)
 			attributeItemProvider.dispose();
-		if (deotonicItemProvider != null)
-			deotonicItemProvider.dispose();
+		if (deonticItemProvider != null)
+			deonticItemProvider.dispose();
 		if (conditionItemProvider != null)
 			conditionItemProvider.dispose();
 		if (aimItemProvider != null)

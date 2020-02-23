@@ -7,28 +7,29 @@ import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
+
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import smaCoViLanguage.Deotonic;
+import smaCoViLanguage.Deontic;
 import smaCoViLanguage.SmaCoViLanguagePackage;
 
 /**
- * This is the item provider adapter for a {@link smaCoViLanguage.Deotonic} object.
+ * This is the item provider adapter for a {@link smaCoViLanguage.Deontic} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class DeotonicItemProvider extends AdicoItemProvider {
+public class DeonticItemProvider extends AdicoItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DeotonicItemProvider(AdapterFactory adapterFactory) {
+	public DeonticItemProvider(AdapterFactory adapterFactory) {
 		super(adapterFactory);
 	}
 
@@ -43,36 +44,36 @@ public class DeotonicItemProvider extends AdicoItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addDeotonicPropertyDescriptor(object);
+			addDeonticPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
 
 	/**
-	 * This adds a property descriptor for the Deotonic feature.
+	 * This adds a property descriptor for the Deontic feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addDeotonicPropertyDescriptor(Object object) {
+	protected void addDeonticPropertyDescriptor(Object object) {
 		itemPropertyDescriptors
 				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_Deotonic_Deotonic_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_Deotonic_Deotonic_feature",
-								"_UI_Deotonic_type"),
-						SmaCoViLanguagePackage.Literals.DEOTONIC__DEOTONIC, true, false, false,
+						getResourceLocator(), getString("_UI_Deontic_Deontic_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_Deontic_Deontic_feature",
+								"_UI_Deontic_type"),
+						SmaCoViLanguagePackage.Literals.DEONTIC__DEONTIC, true, false, false,
 						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
-	 * This returns Deotonic.gif.
+	 * This returns Deontic.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/Deotonic"));
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/Deontic"));
 	}
 
 	/**
@@ -93,9 +94,9 @@ public class DeotonicItemProvider extends AdicoItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((Deotonic) object).getName();
-		return label == null || label.length() == 0 ? getString("_UI_Deotonic_type")
-				: getString("_UI_Deotonic_type") + " " + label;
+		String label = ((Deontic) object).getName();
+		return label == null || label.length() == 0 ? getString("_UI_Deontic_type")
+				: getString("_UI_Deontic_type") + " " + label;
 	}
 
 	/**
@@ -109,8 +110,8 @@ public class DeotonicItemProvider extends AdicoItemProvider {
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
 
-		switch (notification.getFeatureID(Deotonic.class)) {
-		case SmaCoViLanguagePackage.DEOTONIC__DEOTONIC:
+		switch (notification.getFeatureID(Deontic.class)) {
+		case SmaCoViLanguagePackage.DEONTIC__DEONTIC:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 			return;
 		}

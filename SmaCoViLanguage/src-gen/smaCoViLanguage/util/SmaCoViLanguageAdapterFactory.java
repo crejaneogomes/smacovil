@@ -82,8 +82,8 @@ public class SmaCoViLanguageAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseDeotonic(Deotonic object) {
-			return createDeotonicAdapter();
+		public Adapter caseDeontic(Deontic object) {
+			return createDeonticAdapter();
 		}
 
 		@Override
@@ -183,16 +183,16 @@ public class SmaCoViLanguageAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link smaCoViLanguage.Deotonic <em>Deotonic</em>}'.
+	 * Creates a new adapter for an object of class '{@link smaCoViLanguage.Deontic <em>Deontic</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see smaCoViLanguage.Deotonic
+	 * @see smaCoViLanguage.Deontic
 	 * @generated
 	 */
-	public Adapter createDeotonicAdapter() {
+	public Adapter createDeonticAdapter() {
 		return null;
 	}
 

@@ -60,8 +60,8 @@ public class SmaCoViLanguageFactoryImpl extends EFactoryImpl implements SmaCoViL
 			return createTerm();
 		case SmaCoViLanguagePackage.ATTRIBUTE:
 			return createAttribute();
-		case SmaCoViLanguagePackage.DEOTONIC:
-			return createDeotonic();
+		case SmaCoViLanguagePackage.DEONTIC:
+			return createDeontic();
 		case SmaCoViLanguagePackage.CONDITION:
 			return createCondition();
 		case SmaCoViLanguagePackage.AIM:
@@ -104,9 +104,9 @@ public class SmaCoViLanguageFactoryImpl extends EFactoryImpl implements SmaCoViL
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Deotonic createDeotonic() {
-		DeotonicImpl deotonic = new DeotonicImpl();
-		return deotonic;
+	public Deontic createDeontic() {
+		DeonticImpl deontic = new DeonticImpl();
+		return deontic;
 	}
 
 	/**

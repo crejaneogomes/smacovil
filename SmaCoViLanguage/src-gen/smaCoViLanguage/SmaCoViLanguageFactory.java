@@ -40,13 +40,13 @@ public interface SmaCoViLanguageFactory extends EFactory {
 	Attribute createAttribute();
 
 	/**
-	 * Returns a new object of class '<em>Deotonic</em>'.
+	 * Returns a new object of class '<em>Deontic</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Deotonic</em>'.
+	 * @return a new object of class '<em>Deontic</em>'.
 	 * @generated
 	 */
-	Deotonic createDeotonic();
+	Deontic createDeontic();
 
 	/**
 	 * Returns a new object of class '<em>Condition</em>'.

@@ -93,13 +93,13 @@ public class SmaCoViLanguageSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case SmaCoViLanguagePackage.DEOTONIC: {
-			Deotonic deotonic = (Deotonic) theEObject;
-			T result = caseDeotonic(deotonic);
+		case SmaCoViLanguagePackage.DEONTIC: {
+			Deontic deontic = (Deontic) theEObject;
+			T result = caseDeontic(deontic);
 			if (result == null)
-				result = caseAdico(deotonic);
+				result = caseAdico(deontic);
 			if (result == null)
-				result = caseSmartContract(deotonic);
+				result = caseSmartContract(deontic);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -228,17 +228,17 @@ public class SmaCoViLanguageSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Deotonic</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Deontic</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Deotonic</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Deontic</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDeotonic(Deotonic object) {
+	public T caseDeontic(Deontic object) {
 		return null;
 	}
 

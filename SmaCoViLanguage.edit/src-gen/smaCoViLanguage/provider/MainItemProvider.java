@@ -150,7 +150,7 @@ public class MainItemProvider extends SmartContractItemProvider {
 				SmaCoViLanguageFactory.eINSTANCE.createAttribute()));
 
 		newChildDescriptors.add(createChildParameter(SmaCoViLanguagePackage.Literals.MAIN__SMARTCONTRACT,
-				SmaCoViLanguageFactory.eINSTANCE.createDeotonic()));
+				SmaCoViLanguageFactory.eINSTANCE.createDeontic()));
 
 		newChildDescriptors.add(createChildParameter(SmaCoViLanguagePackage.Literals.MAIN__SMARTCONTRACT,
 				SmaCoViLanguageFactory.eINSTANCE.createCondition()));
