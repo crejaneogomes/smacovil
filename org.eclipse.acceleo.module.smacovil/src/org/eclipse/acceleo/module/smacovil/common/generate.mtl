@@ -6,9 +6,10 @@
 [template public generateElement(aMain : Main)]
 [comment @main /]
 [file ('program'.concat('.adico'), false, 'UTF-8')]
-   	[for (p: SmartContract | aMain.eContents())]     
+Adico([for (p: SmartContract | aMain.eContents())]     
       [p.generateElement()/]          
 	[/for]
+)
 [/file]
 [/template]
 
@@ -24,12 +25,13 @@ Adico(
 A("[aAttribute.AttributeName/]")
 [/template]
 
-[template public generateElement(aDeotonic : Deotonic)]
-D([aDeotonic.Deotonic/])
+[template public generateElement(aDeontic : Deontic)]
+D([aDeontic.Deontic/])
 [/template]
 
 [template public generateElement(aAim : Aim)]
-I("[aAim.Aim/]"	[if (aAim.AimObject <> null)], Object{"[aAim.AimObject/]"}[/if][if (aAim.Targets <> null)], Target{"[aAim.Targets/]"}})[/if])
+I("[aAim.Aim/]"	[if (aAim.AimObject <> null)], Object{"[aAim.AimObject/]"}[/if]
+	[if (aAim.Targets <> null)], Target{"[aAim.Targets/]"}})[/if])
 [/template]
 
 [template public generateElement(aSimpleCondition : SimpleCondition)]
@@ -41,7 +43,11 @@ C(IF("[aCondition.FirstPartCondition/]","[aCondition.Operator/]","[aCondition.La
 [/template]
 
 [template public generateElement(aOrElse : OrElse)]
-O([aOrElse.eContents(Term)->first().generateElement()/])
+O(Adico(
+	[for (p: SmartContract | aOrElse.eContents())]     
+      [p.generateElement()/]         
+	[/for]
+))
 [/template]
 
 [template public generateElement(aAnd : And)]

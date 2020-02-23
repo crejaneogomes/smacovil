@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smaCoViLanguage:Main xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:smaCoViLanguage="http://www.example.org/smaCoViLanguage">
+  <smartcontract xsi:type="smaCoViLanguage:Attribute" AttributeName="buyer"/>
+  <smartcontract xsi:type="smaCoViLanguage:Deontic" Deontic="must"/>
+  <smartcontract xsi:type="smaCoViLanguage:Aim" Aim="pay" AimObject="funds"/>
+  <smartcontract xsi:type="smaCoViLanguage:SimpleCondition" Operator="before" FirstPartCondition="deadline"/>
+  <smartcontract xsi:type="smaCoViLanguage:OrElse">
+    <smartcontract xsi:type="smaCoViLanguage:Attribute" AttributeName="system"/>
+    <smartcontract xsi:type="smaCoViLanguage:Deontic" Deontic="must"/>
+    <smartcontract xsi:type="smaCoViLanguage:Aim" Aim="release" AimObject="objectOfInterest" Targets="seller, address"/>
+  </smartcontract>
+  <smartcontract xsi:type="smaCoViLanguage:And"/>
+  <smartcontract xsi:type="smaCoViLanguage:Term">
+    <smartcontract xsi:type="smaCoViLanguage:Attribute" AttributeName="system"/>
+    <smartcontract xsi:type="smaCoViLanguage:Deontic" Deontic="must"/>
+    <smartcontract xsi:type="smaCoViLanguage:Aim" Aim="send" AimObject="funds" Targets="buyer,address"/>
+  </smartcontract>
+  <smartcontract xsi:type="smaCoViLanguage:And"/>
+  <smartcontract xsi:type="smaCoViLanguage:Term">
+    <smartcontract xsi:type="smaCoViLanguage:Attribute" AttributeName="system"/>
+    <smartcontract xsi:type="smaCoViLanguage:Deontic" Deontic="must"/>
+    <smartcontract xsi:type="smaCoViLanguage:Aim" Aim="send" AimObject="funds" Targets="seller,address"/>
+    <smartcontract xsi:type="smaCoViLanguage:Condition" Operator="Operator.>=" FirstPartCondition="msg.value" LastConditionPart="price"/>
+  </smartcontract>
+  <smartcontract xsi:type="smaCoViLanguage:And"/>
+  <smartcontract xsi:type="smaCoViLanguage:Term">
+    <smartcontract xsi:type="smaCoViLanguage:Attribute" AttributeName="system"/>
+    <smartcontract xsi:type="smaCoViLanguage:Deontic" Deontic="must"/>
+    <smartcontract xsi:type="smaCoViLanguage:Aim" Aim="release" AimObject="objectOfInterest" Targets="buyer,address"/>
+    <smartcontract xsi:type="smaCoViLanguage:Condition" Operator="Operator.>=" FirstPartCondition="msg.value" LastConditionPart="price"/>
+  </smartcontract>
+</smaCoViLanguage:Main>

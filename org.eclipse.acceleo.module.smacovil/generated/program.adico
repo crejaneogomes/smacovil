@@ -1,18 +1,35 @@
+Adico(      A("buyer")          
+      D(must)          
+      I("pay"	, Object{"funds"}
+      	)          
+      C("before","deadline")          
+      O(Adico(
+            A("system")         
+            D(must)         
+            I("release"	, Object{"objectOfInterest"}
+            	, Target{"seller, address"}}))         
+      ))          
+      	AND           
       Adico(
-            A("Claudia")         
-            D(Deve)         
-            I("Almoçar"	)         
-            C(IF("dinheiro",">","0"))         
-            	AND          
-            Adico(
-                  A("Claudia")         
-                  D(deve)         
-                  I("bater ponto"	)         
-            )         
-            O(Adico(
-                  A("Claudia")         
-                  D(Não deve)         
-                  I("Almoçar"	)         
-                  C("antes","do horario permitido")         
-            ))         
+            A("system")         
+            D(must)         
+            I("send"	, Object{"funds"}
+            	, Target{"buyer,address"}}))         
       )          
+      	AND           
+      Adico(
+            A("system")         
+            D(must)         
+            I("send"	, Object{"funds"}
+            	, Target{"seller,address"}}))         
+            C(IF("msg.value","Operator.>=","price"))         
+      )          
+      	AND           
+      Adico(
+            A("system")         
+            D(must)         
+            I("release"	, Object{"objectOfInterest"}
+            	, Target{"buyer,address"}}))         
+            C(IF("msg.value","Operator.>=","price"))         
+      )          
+)

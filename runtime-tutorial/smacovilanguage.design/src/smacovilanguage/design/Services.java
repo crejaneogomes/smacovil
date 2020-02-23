@@ -44,9 +44,6 @@ public class Services {
 		else if (instruction instanceof Condition) {
 			return ((Condition)instruction).getFirstPartCondition()+" "+((Condition)instruction).getOperator() +" "+((Condition)instruction).getLastConditionPart();
 		}
-		else if (instruction instanceof Term) {
-			return ((Term)instruction).getName();
-		}
 		else
 			return "";
 	}
