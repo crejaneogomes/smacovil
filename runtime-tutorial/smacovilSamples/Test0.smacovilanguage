@@ -7,7 +7,7 @@
   <smartcontract xsi:type="smaCoViLanguage:OrElse">
     <smartcontract xsi:type="smaCoViLanguage:Attribute" AttributeName="system"/>
     <smartcontract xsi:type="smaCoViLanguage:Deontic" Deontic="must"/>
-    <smartcontract xsi:type="smaCoViLanguage:Aim" Aim="release" AimObject="objectOfInterest" Targets="seller, address"/>
+    <smartcontract xsi:type="smaCoViLanguage:Aim" Aim="release" AimObject="objectOfInterest" Targets="seller,address"/>
   </smartcontract>
   <smartcontract xsi:type="smaCoViLanguage:And"/>
   <smartcontract xsi:type="smaCoViLanguage:Term">
@@ -19,14 +19,14 @@
   <smartcontract xsi:type="smaCoViLanguage:Term">
     <smartcontract xsi:type="smaCoViLanguage:Attribute" AttributeName="system"/>
     <smartcontract xsi:type="smaCoViLanguage:Deontic" Deontic="must"/>
-    <smartcontract xsi:type="smaCoViLanguage:Aim" Aim="send" AimObject="funds" Targets="seller,address"/>
-    <smartcontract xsi:type="smaCoViLanguage:Condition" Operator="Operator.>=" FirstPartCondition="msg.value" LastConditionPart="price"/>
+    <smartcontract xsi:type="smaCoViLanguage:Aim" Aim="send" AimObject="funds" Targets="seller,adderss"/>
+    <smartcontract xsi:type="smaCoViLanguage:Condition" Operator=">=" FirstPartCondition="msg.value" LastConditionPart="price"/>
   </smartcontract>
   <smartcontract xsi:type="smaCoViLanguage:And"/>
   <smartcontract xsi:type="smaCoViLanguage:Term">
     <smartcontract xsi:type="smaCoViLanguage:Attribute" AttributeName="system"/>
     <smartcontract xsi:type="smaCoViLanguage:Deontic" Deontic="must"/>
-    <smartcontract xsi:type="smaCoViLanguage:Aim" Aim="release" AimObject="objectOfInterest" Targets="buyer,address"/>
-    <smartcontract xsi:type="smaCoViLanguage:Condition" Operator="Operator.>=" FirstPartCondition="msg.value" LastConditionPart="price"/>
+    <smartcontract xsi:type="smaCoViLanguage:Aim" Aim="release" AimObject="objectOfInteres" Targets="buyer,address"/>
+    <smartcontract xsi:type="smaCoViLanguage:Condition" Operator=">=" FirstPartCondition="msg.value" LastConditionPart="price"/>
   </smartcontract>
 </smaCoViLanguage:Main>

@@ -1,7 +1,5 @@
 [comment encoding = UTF-8 /]
-
 [module generate('http://www.example.org/smaCoViLanguage', 'http://www.eclipse.org/ocl/1.1.0/OCL/Types')]
-
 
 [template public generateElement(aMain : Main)]
 [comment @main /]
@@ -39,7 +37,7 @@ C("[aSimpleCondition.Operator/]","[aSimpleCondition.FirstPartCondition/]")
 [/template]
 
 [template public generateElement(aCondition : Condition)]
-C(IF("[aCondition.FirstPartCondition/]","[aCondition.Operator/]","[aCondition.LastConditionPart/]"))
+C(IF("[aCondition.FirstPartCondition/]", Operator.[aCondition.Operator/],"[aCondition.LastConditionPart/]"))
 [/template]
 
 [template public generateElement(aOrElse : OrElse)]
@@ -55,5 +53,4 @@ O(Adico(
       [p.generateElement()/]
 	[/for]
 [/template]
-
 [template public generateElement(aSmartContract : SmartContract)/]

@@ -7,7 +7,7 @@ Adico(      A("buyer")
             A("system")         
             D(must)         
             I("release"	, Object{"objectOfInterest"}
-            	, Target{"seller, address"}}))         
+            	, Target{"seller,address"}}))         
       ))          
       	AND           
       Adico(
@@ -21,15 +21,15 @@ Adico(      A("buyer")
             A("system")         
             D(must)         
             I("send"	, Object{"funds"}
-            	, Target{"seller,address"}}))         
-            C(IF("msg.value","Operator.>=","price"))         
+            	, Target{"seller,adderss"}}))         
+            C(IF("msg.value", Operator.>=,"price"))         
       )          
       	AND           
       Adico(
             A("system")         
             D(must)         
-            I("release"	, Object{"objectOfInterest"}
+            I("release"	, Object{"objectOfInteres"}
             	, Target{"buyer,address"}}))         
-            C(IF("msg.value","Operator.>=","price"))         
+            C(IF("msg.value", Operator.>=,"price"))         
       )          
 )
