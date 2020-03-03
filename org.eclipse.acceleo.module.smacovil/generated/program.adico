@@ -1,35 +1,35 @@
-Adico(      A("buyer")          
-      D(must)          
-      I("pay"	, Object{"funds"}
-      	)          
-      C("before","deadline")          
-      O(Adico(
-            A("system")         
-            D(must)         
-            I("release"	, Object{"objectOfInterest"}
-            	, Target{"seller,address"}}))         
+NAdicoStatement(      A("buyer"),          
+      D(must),          
+      I("pay"	, onObject{"funds"},
+      	),          
+      C("before","deadline"),          
+      (NAdico(
+            A("system"),         
+            D(must),         
+            I("release"	, onObject{"objectOfInterest"},
+            	 onTarget{"seller,address"}),         
       ))          
       	AND           
-      Adico(
-            A("system")         
-            D(must)         
-            I("send"	, Object{"funds"}
-            	, Target{"buyer,address"}}))         
+      (NAdico(
+            A("system"),         
+            D(must),         
+            I("send"	, onObject{"funds"},
+            	 onTarget{"buyer,address"}),         
       )          
       	AND           
-      Adico(
-            A("system")         
-            D(must)         
-            I("send"	, Object{"funds"}
-            	, Target{"seller,adderss"}}))         
-            C(IF("msg.value", Operator.>=,"price"))         
+      (NAdico(
+            A("system"),         
+            D(must),         
+            I("send"	, onObject{"funds"},
+            	 onTarget{"seller,adderss"}),         
+            C(IF("msg.value", Operator.>=,"price")),         
       )          
       	AND           
-      Adico(
-            A("system")         
-            D(must)         
-            I("release"	, Object{"objectOfInteres"}
-            	, Target{"buyer,address"}}))         
-            C(IF("msg.value", Operator.>=,"price"))         
+      (NAdico(
+            A("system"),         
+            D(must),         
+            I("release"	, onObject{"objectOfInteres"},
+            	 onTarget{"buyer,address"}),         
+            C(IF("msg.value", Operator.>=,"price")),         
       )          
 )

@@ -4,7 +4,7 @@
 [template public generateElement(aMain : Main)]
 [comment @main /]
 [file ('program'.concat('.adico'), false, 'UTF-8')]
-Adico([for (p: SmartContract | aMain.eContents())]     
+NAdicoStatement([for (p: SmartContract | aMain.eContents())]     
       [p.generateElement()/]          
 	[/for]
 )
@@ -12,7 +12,7 @@ Adico([for (p: SmartContract | aMain.eContents())]
 [/template]
 
 [template public generateElement(aTerm : Term)]
-Adico(
+(NAdico(
 	[for (p: SmartContract | aTerm.eContents())]     
       [p.generateElement()/]         
 	[/for]
@@ -20,28 +20,28 @@ Adico(
 [/template]
 
 [template public generateElement(aAttribute : Attribute)]
-A("[aAttribute.AttributeName/]")
+A("[aAttribute.AttributeName/]"),
 [/template]
 
 [template public generateElement(aDeontic : Deontic)]
-D([aDeontic.Deontic/])
+D([aDeontic.Deontic/]),
 [/template]
 
 [template public generateElement(aAim : Aim)]
-I("[aAim.Aim/]"	[if (aAim.AimObject <> null)], Object{"[aAim.AimObject/]"}[/if]
-	[if (aAim.Targets <> null)], Target{"[aAim.Targets/]"}})[/if])
+I("[aAim.Aim/]"	[if (aAim.AimObject <> null)], onObject{"[aAim.AimObject/]"},[/if]
+	[if (aAim.Targets <> null)] onTarget{"[aAim.Targets/]"}[/if]),
 [/template]
 
 [template public generateElement(aSimpleCondition : SimpleCondition)]
-C("[aSimpleCondition.Operator/]","[aSimpleCondition.FirstPartCondition/]")
+C("[aSimpleCondition.Operator/]","[aSimpleCondition.FirstPartCondition/]"),
 [/template]
 
 [template public generateElement(aCondition : Condition)]
-C(IF("[aCondition.FirstPartCondition/]", Operator.[aCondition.Operator/],"[aCondition.LastConditionPart/]"))
+C(IF("[aCondition.FirstPartCondition/]", Operator.[aCondition.Operator/],"[aCondition.LastConditionPart/]")),
 [/template]
 
 [template public generateElement(aOrElse : OrElse)]
-O(Adico(
+(NAdico(
 	[for (p: SmartContract | aOrElse.eContents())]     
       [p.generateElement()/]         
 	[/for]
