@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="smacovilanguage" version="12.0.0.2017041100">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:properties="http://www.eclipse.org/sirius/properties/1.0.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="smacovilanguage" version="12.0.0.2017041100">
   <ownedViewpoints name="SmaCoViLanguage" modelFileExtension="smacovilanguage">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="SmaCoViLanguage Diagram" domainClass="smaCoViLanguage::Main" enablePopupBars="true">
       <metamodel href="http://www.example.org/smaCoViLanguage#/"/>
@@ -117,7 +117,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Term" containerMappings="//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@containerMappings[name='SM_SubTerm']" extraMappings="//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@containerMappings[name='SM_SubTerm']">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Term" containerMappings="//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@containerMappings[name='SM_SubTerm']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -158,4 +158,131 @@
     </ownedRepresentations>
     <ownedJavaExtensions qualifiedClassName="smacovilanguage.design.Services"/>
   </ownedViewpoints>
+  <extensions xsi:type="properties:ViewExtensionDescription" name="Properties">
+    <categories name="Default Category">
+      <pages name="Default Page" labelExpression="General" domainClass="smaCoViLanguage::SmartContract" semanticCandidateExpression="var:self" groups="//@extensions.0/@categories.0/@groups.0 //@extensions.0/@categories.0/@groups.1 //@extensions.0/@categories.0/@groups.2 //@extensions.0/@categories.0/@groups.3 //@extensions.0/@categories.0/@groups.4"/>
+      <groups name="Attribute" labelExpression="Properties" domainClass="smaCoViLanguage::Attribute" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:TextDescription" name="AttributeName" labelExpression="Name" valueExpression="feature:AttributeName">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+              <subModelOperations xsi:type="tool_1:SetValue" featureName="AttributeName" valueExpression="var:newValue"/>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+        <validationSet>
+          <propertyValidationRules name="UseLessAttributeName" level="ERROR" message="This attribute is obrigatory" targets="//@extensions.0/@categories.0/@groups.0/@controls.0">
+            <audits auditExpression="aql:self.AttributeName.size()>0"/>
+          </propertyValidationRules>
+        </validationSet>
+      </groups>
+      <groups name="Deontic" labelExpression="Properties" domainClass="smaCoViLanguage::Deontic" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:ContainerDescription" name="DeonticContainer">
+          <controls xsi:type="properties:SelectDescription" name="DeonticSelect" labelExpression="Deontic:" valueExpression="feature:Deontic" candidatesExpression="aql:OrderedSet{'may', 'must', 'mustNot'}->asSequence()" candidateDisplayExpression="aql:candidate.toString()">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="Deontic" valueExpression="var:newValue"/>
+              </firstModelOperations>
+            </initialOperation>
+          </controls>
+        </controls>
+        <validationSet>
+          <propertyValidationRules name="UseLessDeontic" level="ERROR" message="The Deontic is obrigatory" targets="//@extensions.0/@categories.0/@groups.1/@controls.0/@controls.0">
+            <audits auditExpression="aql:self.Deontic.size()>0"/>
+          </propertyValidationRules>
+        </validationSet>
+      </groups>
+      <groups name="Condition" labelExpression="Group" domainClass="smaCoViLanguage::Condition" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:ContainerDescription" name="ConditionContainer">
+          <controls xsi:type="properties:TextDescription" name="FirstPartCondition" labelExpression="First Part of Condition" valueExpression="feature:FirstPartCondition">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="FirstPartCondition" valueExpression="var:newValue"/>
+              </firstModelOperations>
+            </initialOperation>
+          </controls>
+          <controls xsi:type="properties:TextDescription" name="LastConditionPart" labelExpression="Last Part of Condition" valueExpression="feature:LastConditionPart">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="LastConditionPart" valueExpression="var:newValue"/>
+              </firstModelOperations>
+            </initialOperation>
+          </controls>
+          <controls xsi:type="properties:SelectDescription" name="OperatorSelect" labelExpression="Operator:" valueExpression="feature:Operator" candidatesExpression="aql:OrderedSet{'>', '&lt;', '&lt;=','>=','==','!='}->asSequence()" candidateDisplayExpression="aql:candidate.toString()">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="Operator" valueExpression="var:newValue"/>
+              </firstModelOperations>
+            </initialOperation>
+          </controls>
+        </controls>
+        <validationSet>
+          <propertyValidationRules name="UseLessFirstPartCondition" level="ERROR" message="First Part Condition is obrigatory" targets="//@extensions.0/@categories.0/@groups.2/@controls.0/@controls.0">
+            <audits auditExpression="aql:self.FirstPartCondition.size()>0"/>
+          </propertyValidationRules>
+          <propertyValidationRules name="UseLessLastConditionPart" level="ERROR" message="The Last Condition Part is obrigatory" targets="//@extensions.0/@categories.0/@groups.2/@controls.0/@controls.1">
+            <audits auditExpression="aql:self.LastConditionPart.size()>0"/>
+          </propertyValidationRules>
+          <propertyValidationRules name="UseLessOperator" level="ERROR" message="The operator is obrigatory" targets="//@extensions.0/@categories.0/@groups.2/@controls.0/@controls.2">
+            <audits auditExpression="aql:self.Operator.size()>0"/>
+          </propertyValidationRules>
+        </validationSet>
+      </groups>
+      <groups name="SimpleCondition" labelExpression="Properties" domainClass="smaCoViLanguage::SimpleCondition" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:ContainerDescription" name="SimpleConditionContainer">
+          <controls xsi:type="properties:TextDescription" name="FirstPartCondition" labelExpression="First Part of Condition" valueExpression="feature:FirstPartCondition">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="FirstPartCondition" valueExpression="var:newValue"/>
+              </firstModelOperations>
+            </initialOperation>
+          </controls>
+          <controls xsi:type="properties:TextDescription" name="Operator" labelExpression="Operator" valueExpression="feature:Operator">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="Operator" valueExpression="var:newValue"/>
+              </firstModelOperations>
+            </initialOperation>
+          </controls>
+        </controls>
+        <validationSet>
+          <propertyValidationRules name="UseLessFirstPartCondition" level="ERROR" message="First part condition is obrigatry" targets="//@extensions.0/@categories.0/@groups.3/@controls.0/@controls.0">
+            <audits auditExpression="aql:self.FirstPartCondition.size()>0"/>
+          </propertyValidationRules>
+          <propertyValidationRules name="UseLessOperator" level="ERROR" message="Operator is obrigatory" targets="//@extensions.0/@categories.0/@groups.3/@controls.0/@controls.1">
+            <audits auditExpression="aql:self.Operator.size()>0"/>
+          </propertyValidationRules>
+        </validationSet>
+      </groups>
+      <groups name="Aim" labelExpression="Properties" domainClass="smaCoViLanguage::Aim" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:ContainerDescription" name="AimContainer">
+          <controls xsi:type="properties:TextAreaDescription" name="Aim" labelExpression="Aim Value" valueExpression="feature:Aim">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="Aim" valueExpression="var:newValue"/>
+              </firstModelOperations>
+            </initialOperation>
+          </controls>
+          <controls xsi:type="properties:TextAreaDescription" name="AimObject" labelExpression="Object" valueExpression="feature:AimObject">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="AimObject" valueExpression="var:newValue"/>
+              </firstModelOperations>
+            </initialOperation>
+          </controls>
+          <controls xsi:type="properties:TextAreaDescription" name="Target" labelExpression="Target" valueExpression="feature:Target">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="Target" valueExpression="var:newValue"/>
+              </firstModelOperations>
+            </initialOperation>
+          </controls>
+        </controls>
+        <validationSet>
+          <propertyValidationRules name="UseLessAim" level="ERROR" message="Aim is obrigatory" targets="//@extensions.0/@categories.0/@groups.4/@controls.0/@controls.0">
+            <audits auditExpression="aql:self.Aim.size()>0"/>
+          </propertyValidationRules>
+        </validationSet>
+      </groups>
+    </categories>
+  </extensions>
 </description:Group>
