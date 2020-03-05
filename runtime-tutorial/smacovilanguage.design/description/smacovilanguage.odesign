@@ -12,7 +12,7 @@
           </style>
         </nodeMappings>
         <nodeMappings name="SM_Condition" semanticCandidatesExpression="feature:smartcontract" domainClass="smaCoViLanguage::Condition">
-          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="aql:self.FirstPartCondition+&quot; &quot;+self.Operator+&quot; &quot;+self.LastConditionPart" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/smacovilanguage.design/icons/Condition.gif">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="aql:self.FirstPartCondition+self.Operator+self.LastConditionPart" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/smacovilanguage.design/icons/Condition.gif">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelFormat>underline</labelFormat>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -193,21 +193,21 @@
       </groups>
       <groups name="Condition" labelExpression="Properties" domainClass="smaCoViLanguage::Condition" semanticCandidateExpression="var:self">
         <controls xsi:type="properties:ContainerDescription" name="ConditionContainer">
-          <controls xsi:type="properties:TextDescription" name="FirstPartCondition" labelExpression="First Part of Condition" valueExpression="feature:FirstPartCondition">
+          <controls xsi:type="properties:TextDescription" name="FirstPartCondition" labelExpression="FirstPartCondition" valueExpression="feature:FirstPartCondition">
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
                 <subModelOperations xsi:type="tool_1:SetValue" featureName="FirstPartCondition" valueExpression="var:newValue"/>
               </firstModelOperations>
             </initialOperation>
           </controls>
-          <controls xsi:type="properties:TextDescription" name="LastConditionPart" labelExpression="Last Part of Condition" valueExpression="feature:LastConditionPart">
+          <controls xsi:type="properties:TextDescription" name="LastConditionPart" labelExpression="LastConditionPart" valueExpression="feature:LastConditionPart">
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
                 <subModelOperations xsi:type="tool_1:SetValue" featureName="LastConditionPart" valueExpression="var:newValue"/>
               </firstModelOperations>
             </initialOperation>
           </controls>
-          <controls xsi:type="properties:SelectDescription" name="OperatorSelect" labelExpression="Operator:" valueExpression="feature:Operator" candidatesExpression="aql:OrderedSet{'>', '&lt;', '&lt;=','>=','==','!='}->asSequence()" candidateDisplayExpression="aql:candidate.toString()">
+          <controls xsi:type="properties:SelectDescription" name="OperatorSelect" labelExpression="Operator" valueExpression="feature:Operator" candidatesExpression="aql:OrderedSet{'>', '&lt;', '&lt;=','>=','==','!='}->asSequence()" candidateDisplayExpression="aql:candidate.toString()">
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
                 <subModelOperations xsi:type="tool_1:SetValue" featureName="Operator" valueExpression="var:newValue"/>
@@ -269,10 +269,10 @@
               </firstModelOperations>
             </initialOperation>
           </controls>
-          <controls xsi:type="properties:TextAreaDescription" name="Target" labelExpression="Target" valueExpression="feature:Target">
+          <controls xsi:type="properties:TextAreaDescription" name="Targets" labelExpression="Targets:" valueExpression="feature:Targets">
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
-                <subModelOperations xsi:type="tool_1:SetValue" featureName="Target" valueExpression="var:newValue"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="Targets" valueExpression="var:newValue"/>
               </firstModelOperations>
             </initialOperation>
           </controls>

@@ -2,11 +2,26 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:smaCoViLanguage="http://www.example.org/smaCoViLanguage" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
   <viewpoint:DAnalysis uid="_IHN7gFWnEeqlIM59JalMXg" selectedViews="_WNlZQFWnEeqlIM59JalMXg" version="14.1.0.201810161215">
     <semanticResources>Test0.smacovilanguage</semanticResources>
+    <semanticResources>Exp1.smacovilanguage</semanticResources>
+    <semanticResources>Exp2.smacovilanguage</semanticResources>
+    <semanticResources>Test1.smacovilanguage</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_WNlZQFWnEeqlIM59JalMXg">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_0TZHQFZMEeq-g4WzQEyRow" name="Test0 SmaCoViLanguage Diagram" repPath="#_0SehQFZMEeq-g4WzQEyRow">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']"/>
         <target xmi:type="smaCoViLanguage:Main" href="Test0.smacovilanguage#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_FAJvQF7vEeq-Bo2TLJ4dcA" name="Exp1 SmaCoViLanguage Diagram" repPath="#_E_lukF7vEeq-Bo2TLJ4dcA">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']"/>
+        <target xmi:type="smaCoViLanguage:Main" href="Exp1.smacovilanguage#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_qQqYY17vEeq-Bo2TLJ4dcA" name="Exp2 SmaCoViLanguage Diagram" repPath="#_qQpxUF7vEeq-Bo2TLJ4dcA">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']"/>
+        <target xmi:type="smaCoViLanguage:Main" href="Exp2.smacovilanguage#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_sbPnU170Eeq-Bo2TLJ4dcA" name="Test1 SmaCoViLanguage Diagram" repPath="#_sbISkF70Eeq-Bo2TLJ4dcA">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']"/>
+        <target xmi:type="smaCoViLanguage:Main" href="Test1.smacovilanguage#/"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
   </viewpoint:DAnalysis>
@@ -735,5 +750,497 @@
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_0SlO8FZMEeq-g4WzQEyRow"/>
     <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer"/>
     <target xmi:type="smaCoViLanguage:Main" href="Test0.smacovilanguage#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_E_lukF7vEeq-Bo2TLJ4dcA" name="Exp1 SmaCoViLanguage Diagram">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_E_rOIF7vEeq-Bo2TLJ4dcA" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_E_rOIV7vEeq-Bo2TLJ4dcA"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_FA-OoF7vEeq-Bo2TLJ4dcA" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_FA-OoV7vEeq-Bo2TLJ4dcA" type="Sirius" element="_E_lukF7vEeq-Bo2TLJ4dcA" measurementUnit="Pixel">
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_FA-Ool7vEeq-Bo2TLJ4dcA"/>
+      </data>
+    </ownedAnnotationEntries>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_E_ox4F7vEeq-Bo2TLJ4dcA"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer"/>
+    <target xmi:type="smaCoViLanguage:Main" href="Exp1.smacovilanguage#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_qQpxUF7vEeq-Bo2TLJ4dcA" name="Exp2 SmaCoViLanguage Diagram">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_qQqYYF7vEeq-Bo2TLJ4dcA" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_qQqYYV7vEeq-Bo2TLJ4dcA"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_qQq_cF7vEeq-Bo2TLJ4dcA" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_qQq_cV7vEeq-Bo2TLJ4dcA" type="Sirius" element="_qQpxUF7vEeq-Bo2TLJ4dcA" measurementUnit="Pixel">
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_qQq_cl7vEeq-Bo2TLJ4dcA"/>
+      </data>
+    </ownedAnnotationEntries>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_qQpxUV7vEeq-Bo2TLJ4dcA"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer"/>
+    <target xmi:type="smaCoViLanguage:Main" href="Exp2.smacovilanguage#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_sbISkF70Eeq-Bo2TLJ4dcA" name="Test1 SmaCoViLanguage Diagram">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_sbPnUF70Eeq-Bo2TLJ4dcA" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_sbPnUV70Eeq-Bo2TLJ4dcA"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_sbQOYF70Eeq-Bo2TLJ4dcA" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_sbQOYV70Eeq-Bo2TLJ4dcA" type="Sirius" element="_sbISkF70Eeq-Bo2TLJ4dcA" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_tb06kl70Eeq-Bo2TLJ4dcA" type="2001" element="_tbtl0F70Eeq-Bo2TLJ4dcA">
+          <children xmi:type="notation:Node" xmi:id="_tb1hoF70Eeq-Bo2TLJ4dcA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_tb1hoV70Eeq-Bo2TLJ4dcA" x="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_tb1hol70Eeq-Bo2TLJ4dcA" type="3005" element="_tbtl0V70Eeq-Bo2TLJ4dcA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_tb1ho170Eeq-Bo2TLJ4dcA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tb1hpF70Eeq-Bo2TLJ4dcA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_tb06k170Eeq-Bo2TLJ4dcA" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tb06lF70Eeq-Bo2TLJ4dcA" x="105" y="100" width="64" height="64"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_0gMVNV70Eeq-Bo2TLJ4dcA" type="2001" element="_0gJR4F70Eeq-Bo2TLJ4dcA">
+          <children xmi:type="notation:Node" xmi:id="_0gMVOF70Eeq-Bo2TLJ4dcA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_0gMVOV70Eeq-Bo2TLJ4dcA" x="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_0gM8QF70Eeq-Bo2TLJ4dcA" type="3005" element="_0gJR4V70Eeq-Bo2TLJ4dcA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_0gM8QV70Eeq-Bo2TLJ4dcA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0gM8Ql70Eeq-Bo2TLJ4dcA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_0gMVNl70Eeq-Bo2TLJ4dcA" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0gMVN170Eeq-Bo2TLJ4dcA" x="245" y="110" width="64" height="64"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_3ax3CV70Eeq-Bo2TLJ4dcA" type="2001" element="_3auzsF70Eeq-Bo2TLJ4dcA">
+          <children xmi:type="notation:Node" xmi:id="_3ax3DF70Eeq-Bo2TLJ4dcA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_3ax3DV70Eeq-Bo2TLJ4dcA" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_3ayeEF70Eeq-Bo2TLJ4dcA" type="3005" element="_3auzsV70Eeq-Bo2TLJ4dcA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_3ayeEV70Eeq-Bo2TLJ4dcA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3ayeEl70Eeq-Bo2TLJ4dcA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_3ax3Cl70Eeq-Bo2TLJ4dcA" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3ax3C170Eeq-Bo2TLJ4dcA" x="395" y="115" width="64" height="64"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_i2pPIF71Eeq-Bo2TLJ4dcA" type="2001" element="_i2gsQF71Eeq-Bo2TLJ4dcA">
+          <children xmi:type="notation:Node" xmi:id="_i2pPI171Eeq-Bo2TLJ4dcA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_i2pPJF71Eeq-Bo2TLJ4dcA" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_i2pPJV71Eeq-Bo2TLJ4dcA" type="3005" element="_i2jIgF71Eeq-Bo2TLJ4dcA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_i2pPJl71Eeq-Bo2TLJ4dcA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i2pPJ171Eeq-Bo2TLJ4dcA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_i2pPIV71Eeq-Bo2TLJ4dcA" fontName="Segoe UI" fontHeight="12" underline="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i2pPIl71Eeq-Bo2TLJ4dcA" x="585" y="155" width="64" height="64"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_0Ho15V71Eeq-Bo2TLJ4dcA" type="2001" element="_0HjWQF71Eeq-Bo2TLJ4dcA">
+          <children xmi:type="notation:Node" xmi:id="_0Hpc4F71Eeq-Bo2TLJ4dcA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_0Hpc4V71Eeq-Bo2TLJ4dcA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_0Hpc4l71Eeq-Bo2TLJ4dcA" type="3005" element="_0HjWQV71Eeq-Bo2TLJ4dcA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_0Hpc4171Eeq-Bo2TLJ4dcA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0Hpc5F71Eeq-Bo2TLJ4dcA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_0Ho15l71Eeq-Bo2TLJ4dcA" fontName="Segoe UI" fontHeight="1"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0Ho15171Eeq-Bo2TLJ4dcA" x="75" y="270" width="71" height="71"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_3XpOAF71Eeq-Bo2TLJ4dcA" type="2003" element="_3XigUF71Eeq-Bo2TLJ4dcA">
+          <children xmi:type="notation:Node" xmi:id="_3Xp1EF71Eeq-Bo2TLJ4dcA" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_3XqcIF71Eeq-Bo2TLJ4dcA" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_N7BCYF74Eeq-Bo2TLJ4dcA" type="3010" element="_N6carF74Eeq-Bo2TLJ4dcA">
+              <styles xmi:type="notation:FontStyle" xmi:id="_N7BCYV74Eeq-Bo2TLJ4dcA" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_N7BCYl74Eeq-Bo2TLJ4dcA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_PA3QIF74Eeq-Bo2TLJ4dcA" type="3010" element="_PA2pHV74Eeq-Bo2TLJ4dcA">
+              <styles xmi:type="notation:FontStyle" xmi:id="_PA3QIV74Eeq-Bo2TLJ4dcA" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_PA3QIl74Eeq-Bo2TLJ4dcA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_P1mfwF74Eeq-Bo2TLJ4dcA" type="3010" element="_P1lRrl74Eeq-Bo2TLJ4dcA">
+              <styles xmi:type="notation:FontStyle" xmi:id="_P1mfwV74Eeq-Bo2TLJ4dcA" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_P1mfwl74Eeq-Bo2TLJ4dcA"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_3XqcIV71Eeq-Bo2TLJ4dcA"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_3XqcIl71Eeq-Bo2TLJ4dcA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_3XpOAV71Eeq-Bo2TLJ4dcA" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3XpOAl71Eeq-Bo2TLJ4dcA" x="260" y="290" width="243" height="293"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_8z1plF74Eeq-Bo2TLJ4dcA" type="2001" element="_8zx_MF74Eeq-Bo2TLJ4dcA">
+          <children xmi:type="notation:Node" xmi:id="_8z1pl174Eeq-Bo2TLJ4dcA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_8z1pmF74Eeq-Bo2TLJ4dcA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_8z1pmV74Eeq-Bo2TLJ4dcA" type="3005" element="_8zx_MV74Eeq-Bo2TLJ4dcA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_8z1pml74Eeq-Bo2TLJ4dcA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8z1pm174Eeq-Bo2TLJ4dcA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_8z1plV74Eeq-Bo2TLJ4dcA" fontName="Segoe UI" fontHeight="1"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8z1pll74Eeq-Bo2TLJ4dcA" x="585" y="415" width="71" height="71"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_9axGsl74Eeq-Bo2TLJ4dcA" type="2003" element="_9atcUF74Eeq-Bo2TLJ4dcA">
+          <children xmi:type="notation:Node" xmi:id="_9axGtV74Eeq-Bo2TLJ4dcA" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_9axGtl74Eeq-Bo2TLJ4dcA" type="7004">
+            <children xmi:type="notation:Node" xmi:id="__vAaMF74Eeq-Bo2TLJ4dcA" type="3010" element="__u_zJ174Eeq-Bo2TLJ4dcA">
+              <styles xmi:type="notation:FontStyle" xmi:id="__vAaMV74Eeq-Bo2TLJ4dcA" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="__vAaMl74Eeq-Bo2TLJ4dcA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_Apsg0F75Eeq-Bo2TLJ4dcA" type="3010" element="_Apr51F75Eeq-Bo2TLJ4dcA">
+              <styles xmi:type="notation:FontStyle" xmi:id="_Apsg0V75Eeq-Bo2TLJ4dcA" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_Apsg0l75Eeq-Bo2TLJ4dcA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_FoevAF75Eeq-Bo2TLJ4dcA" type="3010" element="_Fodg9V75Eeq-Bo2TLJ4dcA">
+              <styles xmi:type="notation:FontStyle" xmi:id="_FoevAV75Eeq-Bo2TLJ4dcA" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_FoevAl75Eeq-Bo2TLJ4dcA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_QYpF8F75Eeq-Bo2TLJ4dcA" type="3010" element="_QYoe9l75Eeq-Bo2TLJ4dcA">
+              <styles xmi:type="notation:FontStyle" xmi:id="_QYpF8V75Eeq-Bo2TLJ4dcA" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_QYpF8l75Eeq-Bo2TLJ4dcA"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_9axGt174Eeq-Bo2TLJ4dcA"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_9axGuF74Eeq-Bo2TLJ4dcA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_9axGs174Eeq-Bo2TLJ4dcA" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9axGtF74Eeq-Bo2TLJ4dcA" x="720" y="392" width="212" height="380"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_wmWJQF8JEeq-Bo2TLJ4dcA" type="2001" element="_wmQCoF8JEeq-Bo2TLJ4dcA">
+          <children xmi:type="notation:Node" xmi:id="_wmWwUF8JEeq-Bo2TLJ4dcA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_wmWwUV8JEeq-Bo2TLJ4dcA" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_wmXXYF8JEeq-Bo2TLJ4dcA" type="3005" element="_wmQCoV8JEeq-Bo2TLJ4dcA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_wmXXYV8JEeq-Bo2TLJ4dcA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wmXXYl8JEeq-Bo2TLJ4dcA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_wmWJQV8JEeq-Bo2TLJ4dcA" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wmWJQl8JEeq-Bo2TLJ4dcA" x="600" y="581" width="64" height="64"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_sbQOYl70Eeq-Bo2TLJ4dcA"/>
+        <edges xmi:type="notation:Edge" xmi:id="_0gM8Q170Eeq-Bo2TLJ4dcA" type="4001" element="_0gMVMF70Eeq-Bo2TLJ4dcA" source="_tb06kl70Eeq-Bo2TLJ4dcA" target="_0gMVNV70Eeq-Bo2TLJ4dcA">
+          <children xmi:type="notation:Node" xmi:id="_0gM8R170Eeq-Bo2TLJ4dcA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0gM8SF70Eeq-Bo2TLJ4dcA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_0gM8SV70Eeq-Bo2TLJ4dcA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0gM8Sl70Eeq-Bo2TLJ4dcA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_0gM8S170Eeq-Bo2TLJ4dcA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0gM8TF70Eeq-Bo2TLJ4dcA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_0gM8RF70Eeq-Bo2TLJ4dcA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_0gM8RV70Eeq-Bo2TLJ4dcA" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_0gM8Rl70Eeq-Bo2TLJ4dcA" points="[32, 2, -108, -8]$[108, 7, -32, -3]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0gM8TV70Eeq-Bo2TLJ4dcA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0gM8Tl70Eeq-Bo2TLJ4dcA" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_3ayeE170Eeq-Bo2TLJ4dcA" type="4001" element="_3ax3BF70Eeq-Bo2TLJ4dcA" source="_0gMVNV70Eeq-Bo2TLJ4dcA" target="_3ax3CV70Eeq-Bo2TLJ4dcA">
+          <children xmi:type="notation:Node" xmi:id="_3ayeF170Eeq-Bo2TLJ4dcA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3ayeGF70Eeq-Bo2TLJ4dcA" x="1" y="-11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_3ayeGV70Eeq-Bo2TLJ4dcA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3ayeGl70Eeq-Bo2TLJ4dcA" x="-3" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_3ayeG170Eeq-Bo2TLJ4dcA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3ayeHF70Eeq-Bo2TLJ4dcA" x="-3" y="9"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_3ayeFF70Eeq-Bo2TLJ4dcA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_3ayeFV70Eeq-Bo2TLJ4dcA" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_3ayeFl70Eeq-Bo2TLJ4dcA" points="[32, 1, -118, -4]$[118, 3, -32, -2]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3azFIF70Eeq-Bo2TLJ4dcA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3azFIV70Eeq-Bo2TLJ4dcA" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_i2p2MF71Eeq-Bo2TLJ4dcA" type="4001" element="_i2ooHF71Eeq-Bo2TLJ4dcA" source="_3ax3CV70Eeq-Bo2TLJ4dcA" target="_i2pPIF71Eeq-Bo2TLJ4dcA">
+          <children xmi:type="notation:Node" xmi:id="_i2p2NF71Eeq-Bo2TLJ4dcA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i2p2NV71Eeq-Bo2TLJ4dcA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_i2p2Nl71Eeq-Bo2TLJ4dcA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i2p2N171Eeq-Bo2TLJ4dcA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_i2p2OF71Eeq-Bo2TLJ4dcA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i2p2OV71Eeq-Bo2TLJ4dcA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_i2p2MV71Eeq-Bo2TLJ4dcA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_i2p2Ml71Eeq-Bo2TLJ4dcA" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_i2p2M171Eeq-Bo2TLJ4dcA" points="[32, 6, -158, -34]$[158, 33, -32, -7]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_i2p2Ol71Eeq-Bo2TLJ4dcA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_i2p2O171Eeq-Bo2TLJ4dcA" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_0Hpc5V71Eeq-Bo2TLJ4dcA" type="4001" element="_0Ho14F71Eeq-Bo2TLJ4dcA" source="_i2pPIF71Eeq-Bo2TLJ4dcA" target="_0Ho15V71Eeq-Bo2TLJ4dcA">
+          <children xmi:type="notation:Node" xmi:id="_0Hpc6V71Eeq-Bo2TLJ4dcA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0Hpc6l71Eeq-Bo2TLJ4dcA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_0Hpc6171Eeq-Bo2TLJ4dcA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0Hpc7F71Eeq-Bo2TLJ4dcA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_0Hpc7V71Eeq-Bo2TLJ4dcA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0Hpc7l71Eeq-Bo2TLJ4dcA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_0Hpc5l71Eeq-Bo2TLJ4dcA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_0Hpc5171Eeq-Bo2TLJ4dcA" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_0Hpc6F71Eeq-Bo2TLJ4dcA" points="[-32, 4, 510, -79]$[-542, 83, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0Hpc7171Eeq-Bo2TLJ4dcA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0Hpc8F71Eeq-Bo2TLJ4dcA" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_3XqcI171Eeq-Bo2TLJ4dcA" type="4001" element="_3XnY4171Eeq-Bo2TLJ4dcA" source="_0Ho15V71Eeq-Bo2TLJ4dcA" target="_3XpOAF71Eeq-Bo2TLJ4dcA">
+          <children xmi:type="notation:Node" xmi:id="_3XqcJ171Eeq-Bo2TLJ4dcA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3XqcKF71Eeq-Bo2TLJ4dcA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_3XrDMF71Eeq-Bo2TLJ4dcA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3XrDMV71Eeq-Bo2TLJ4dcA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_3XrDMl71Eeq-Bo2TLJ4dcA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3XrDM171Eeq-Bo2TLJ4dcA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_3XqcJF71Eeq-Bo2TLJ4dcA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_3XqcJV71Eeq-Bo2TLJ4dcA" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_3XqcJl71Eeq-Bo2TLJ4dcA" points="[0, 0, -294, -19]$[294, 19, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3XrDNF71Eeq-Bo2TLJ4dcA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3XrDNV71Eeq-Bo2TLJ4dcA" id="(0.6161825726141079,0.14948453608247422)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_8z2QoF74Eeq-Bo2TLJ4dcA" type="4001" element="_8z1CpV74Eeq-Bo2TLJ4dcA" source="_3XpOAF71Eeq-Bo2TLJ4dcA" target="_8z1plF74Eeq-Bo2TLJ4dcA">
+          <children xmi:type="notation:Node" xmi:id="_8z2QpF74Eeq-Bo2TLJ4dcA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8z2QpV74Eeq-Bo2TLJ4dcA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_8z2Qpl74Eeq-Bo2TLJ4dcA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8z2Qp174Eeq-Bo2TLJ4dcA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_8z2QqF74Eeq-Bo2TLJ4dcA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8z2QqV74Eeq-Bo2TLJ4dcA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_8z2QoV74Eeq-Bo2TLJ4dcA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_8z2Qol74Eeq-Bo2TLJ4dcA" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_8z2Qo174Eeq-Bo2TLJ4dcA" points="[0, 0, -325, -100]$[325, 100, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_8z2Qql74Eeq-Bo2TLJ4dcA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_8z2Qq174Eeq-Bo2TLJ4dcA" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_9axtwF74Eeq-Bo2TLJ4dcA" type="4001" element="_9awfy174Eeq-Bo2TLJ4dcA" source="_8z1plF74Eeq-Bo2TLJ4dcA" target="_9axGsl74Eeq-Bo2TLJ4dcA">
+          <children xmi:type="notation:Node" xmi:id="_9ayU0F74Eeq-Bo2TLJ4dcA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9ayU0V74Eeq-Bo2TLJ4dcA" x="-5" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_9ayU0l74Eeq-Bo2TLJ4dcA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9ayU0174Eeq-Bo2TLJ4dcA" x="11" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_9ayU1F74Eeq-Bo2TLJ4dcA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9ayU1V74Eeq-Bo2TLJ4dcA" x="11" y="9"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_9axtwV74Eeq-Bo2TLJ4dcA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_9axtwl74Eeq-Bo2TLJ4dcA" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_9axtw174Eeq-Bo2TLJ4dcA" points="[36, -3, -197, 12]$[195, -13, -38, 2]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_9ayU1l74Eeq-Bo2TLJ4dcA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_9ayU1174Eeq-Bo2TLJ4dcA" id="(0.6309523809523809,0.11483555286521388)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_wmX-cF8JEeq-Bo2TLJ4dcA" type="4001" element="_wmU7PF8JEeq-Bo2TLJ4dcA" source="_9axGsl74Eeq-Bo2TLJ4dcA" target="_wmWJQF8JEeq-Bo2TLJ4dcA">
+          <children xmi:type="notation:Node" xmi:id="_wmX-dF8JEeq-Bo2TLJ4dcA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wmX-dV8JEeq-Bo2TLJ4dcA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_wmX-dl8JEeq-Bo2TLJ4dcA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wmX-d18JEeq-Bo2TLJ4dcA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_wmYlgF8JEeq-Bo2TLJ4dcA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wmYlgV8JEeq-Bo2TLJ4dcA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_wmX-cV8JEeq-Bo2TLJ4dcA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_wmX-cl8JEeq-Bo2TLJ4dcA" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wmX-c18JEeq-Bo2TLJ4dcA" points="[-106, 16, 88, -15]$[-162, 25, 32, -6]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wmYlgl8JEeq-Bo2TLJ4dcA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wmYlg18JEeq-Bo2TLJ4dcA" id="(0.5,0.5)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_tbtl0F70Eeq-Bo2TLJ4dcA" name="employee" outgoingEdges="_0gMVMF70Eeq-Bo2TLJ4dcA" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="smaCoViLanguage:Attribute" href="Test1.smacovilanguage#//@smartcontract.0"/>
+      <semanticElements xmi:type="smaCoViLanguage:Attribute" href="Test1.smacovilanguage#//@smartcontract.0"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_tbtl0V70Eeq-Bo2TLJ4dcA" labelSize="12" showIcon="false" workspacePath="/smacovilanguage.design/icons/Attribute.gif">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_Attribute']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_Attribute']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_0gJR4F70Eeq-Bo2TLJ4dcA" name="must" outgoingEdges="_3ax3BF70Eeq-Bo2TLJ4dcA" incomingEdges="_0gMVMF70Eeq-Bo2TLJ4dcA" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="smaCoViLanguage:Deontic" href="Test1.smacovilanguage#//@smartcontract.1"/>
+      <semanticElements xmi:type="smaCoViLanguage:Deontic" href="Test1.smacovilanguage#//@smartcontract.1"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_0gJR4V70Eeq-Bo2TLJ4dcA" labelSize="12" showIcon="false" workspacePath="/smacovilanguage.design/icons/Deontic.gif">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_Deontic']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_Deontic']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_0gMVMF70Eeq-Bo2TLJ4dcA" sourceNode="_tbtl0F70Eeq-Bo2TLJ4dcA" targetNode="_0gJR4F70Eeq-Bo2TLJ4dcA">
+      <target xmi:type="smaCoViLanguage:Attribute" href="Test1.smacovilanguage#//@smartcontract.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_0gMVMV70Eeq-Bo2TLJ4dcA" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@edgeMappings[name='SM_next']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_0gMVMl70Eeq-Bo2TLJ4dcA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@edgeMappings[name='SM_next']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_3auzsF70Eeq-Bo2TLJ4dcA" name="LunchRegister---punch,timestamp" outgoingEdges="_i2ooHF71Eeq-Bo2TLJ4dcA" incomingEdges="_3ax3BF70Eeq-Bo2TLJ4dcA" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="smaCoViLanguage:Aim" href="Test1.smacovilanguage#//@smartcontract.2"/>
+      <semanticElements xmi:type="smaCoViLanguage:Aim" href="Test1.smacovilanguage#//@smartcontract.2"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_3auzsV70Eeq-Bo2TLJ4dcA" labelSize="12" showIcon="false" workspacePath="/smacovilanguage.design/icons/Aim.gif">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_Aim']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_Aim']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_3ax3BF70Eeq-Bo2TLJ4dcA" sourceNode="_0gJR4F70Eeq-Bo2TLJ4dcA" targetNode="_3auzsF70Eeq-Bo2TLJ4dcA">
+      <target xmi:type="smaCoViLanguage:Deontic" href="Test1.smacovilanguage#//@smartcontract.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_3ax3BV70Eeq-Bo2TLJ4dcA" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@edgeMappings[name='SM_next']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_3ax3Bl70Eeq-Bo2TLJ4dcA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@edgeMappings[name='SM_next']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_i2gsQF71Eeq-Bo2TLJ4dcA" name="WorkedHours>60m" outgoingEdges="_0Ho14F71Eeq-Bo2TLJ4dcA" incomingEdges="_i2ooHF71Eeq-Bo2TLJ4dcA" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="smaCoViLanguage:Condition" href="Test1.smacovilanguage#//@smartcontract.3"/>
+      <semanticElements xmi:type="smaCoViLanguage:Condition" href="Test1.smacovilanguage#//@smartcontract.3"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_i2jIgF71Eeq-Bo2TLJ4dcA" labelSize="12" showIcon="false" workspacePath="/smacovilanguage.design/icons/Condition.gif">
+        <labelFormat>underline</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_Condition']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_Condition']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_i2ooHF71Eeq-Bo2TLJ4dcA" sourceNode="_3auzsF70Eeq-Bo2TLJ4dcA" targetNode="_i2gsQF71Eeq-Bo2TLJ4dcA">
+      <target xmi:type="smaCoViLanguage:Aim" href="Test1.smacovilanguage#//@smartcontract.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_i2ooHV71Eeq-Bo2TLJ4dcA" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@edgeMappings[name='SM_next']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_i2ooHl71Eeq-Bo2TLJ4dcA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@edgeMappings[name='SM_next']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_0HjWQF71Eeq-Bo2TLJ4dcA" outgoingEdges="_3XnY4171Eeq-Bo2TLJ4dcA" incomingEdges="_0Ho14F71Eeq-Bo2TLJ4dcA" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="smaCoViLanguage:And" href="Test1.smacovilanguage#//@smartcontract.4"/>
+      <semanticElements xmi:type="smaCoViLanguage:And" href="Test1.smacovilanguage#//@smartcontract.4"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_0HjWQV71Eeq-Bo2TLJ4dcA" labelSize="1" showIcon="false" labelPosition="node" workspacePath="/smacovilanguage.design/icons/And.gif">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_And']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_And']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_8zx_MF74Eeq-Bo2TLJ4dcA" outgoingEdges="_9awfy174Eeq-Bo2TLJ4dcA" incomingEdges="_8z1CpV74Eeq-Bo2TLJ4dcA" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="smaCoViLanguage:And" href="Test1.smacovilanguage#//@smartcontract.6"/>
+      <semanticElements xmi:type="smaCoViLanguage:And" href="Test1.smacovilanguage#//@smartcontract.6"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_8zx_MV74Eeq-Bo2TLJ4dcA" labelSize="1" showIcon="false" labelPosition="node" workspacePath="/smacovilanguage.design/icons/And.gif">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_And']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_And']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_0Ho14F71Eeq-Bo2TLJ4dcA" sourceNode="_i2gsQF71Eeq-Bo2TLJ4dcA" targetNode="_0HjWQF71Eeq-Bo2TLJ4dcA">
+      <target xmi:type="smaCoViLanguage:Condition" href="Test1.smacovilanguage#//@smartcontract.3"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_0Ho14V71Eeq-Bo2TLJ4dcA" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@edgeMappings[name='SM_next']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_0Ho14l71Eeq-Bo2TLJ4dcA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@edgeMappings[name='SM_next']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_3XigUF71Eeq-Bo2TLJ4dcA" outgoingEdges="_8z1CpV74Eeq-Bo2TLJ4dcA" incomingEdges="_3XnY4171Eeq-Bo2TLJ4dcA">
+      <target xmi:type="smaCoViLanguage:Term" href="Test1.smacovilanguage#//@smartcontract.5"/>
+      <semanticElements xmi:type="smaCoViLanguage:Term" href="Test1.smacovilanguage#//@smartcontract.5"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_3XigUV71Eeq-Bo2TLJ4dcA" labelSize="12" borderSize="1" borderSizeComputationExpression="1">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@containerMappings[name='SM_SubTerm']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@containerMappings[name='SM_SubTerm']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_N6carF74Eeq-Bo2TLJ4dcA" name="system">
+        <target xmi:type="smaCoViLanguage:Attribute" href="Test1.smacovilanguage#//@smartcontract.5/@smartcontract.0"/>
+        <semanticElements xmi:type="smaCoViLanguage:Attribute" href="Test1.smacovilanguage#//@smartcontract.5/@smartcontract.0"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_N6dBsF74Eeq-Bo2TLJ4dcA" labelSize="12" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@containerMappings[name='SM_SubTerm']/@subNodeMappings[name='SM_subTerm']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@containerMappings[name='SM_SubTerm']/@subNodeMappings[name='SM_subTerm']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_PA2pHV74Eeq-Bo2TLJ4dcA" name="must">
+        <target xmi:type="smaCoViLanguage:Deontic" href="Test1.smacovilanguage#//@smartcontract.5/@smartcontract.1"/>
+        <semanticElements xmi:type="smaCoViLanguage:Deontic" href="Test1.smacovilanguage#//@smartcontract.5/@smartcontract.1"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_PA2pHl74Eeq-Bo2TLJ4dcA" labelSize="12" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@containerMappings[name='SM_SubTerm']/@subNodeMappings[name='SM_subTerm']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@containerMappings[name='SM_SubTerm']/@subNodeMappings[name='SM_subTerm']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_P1lRrl74Eeq-Bo2TLJ4dcA" name="notify - alerta,message">
+        <target xmi:type="smaCoViLanguage:Aim" href="Test1.smacovilanguage#//@smartcontract.5/@smartcontract.2"/>
+        <semanticElements xmi:type="smaCoViLanguage:Aim" href="Test1.smacovilanguage#//@smartcontract.5/@smartcontract.2"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_P1lRr174Eeq-Bo2TLJ4dcA" labelSize="12" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@containerMappings[name='SM_SubTerm']/@subNodeMappings[name='SM_subTerm']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@containerMappings[name='SM_SubTerm']/@subNodeMappings[name='SM_subTerm']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_3XnY4171Eeq-Bo2TLJ4dcA" sourceNode="_0HjWQF71Eeq-Bo2TLJ4dcA" targetNode="_3XigUF71Eeq-Bo2TLJ4dcA">
+      <target xmi:type="smaCoViLanguage:And" href="Test1.smacovilanguage#//@smartcontract.4"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_3XnY5F71Eeq-Bo2TLJ4dcA" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@edgeMappings[name='SM_next']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_3XnY5V71Eeq-Bo2TLJ4dcA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@edgeMappings[name='SM_next']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_8z1CpV74Eeq-Bo2TLJ4dcA" sourceNode="_3XigUF71Eeq-Bo2TLJ4dcA" targetNode="_8zx_MF74Eeq-Bo2TLJ4dcA">
+      <target xmi:type="smaCoViLanguage:Term" href="Test1.smacovilanguage#//@smartcontract.5"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_8z1pkF74Eeq-Bo2TLJ4dcA" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@edgeMappings[name='SM_next']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_8z1pkV74Eeq-Bo2TLJ4dcA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@edgeMappings[name='SM_next']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_9atcUF74Eeq-Bo2TLJ4dcA" outgoingEdges="_wmU7PF8JEeq-Bo2TLJ4dcA" incomingEdges="_9awfy174Eeq-Bo2TLJ4dcA">
+      <target xmi:type="smaCoViLanguage:Term" href="Test1.smacovilanguage#//@smartcontract.7"/>
+      <semanticElements xmi:type="smaCoViLanguage:Term" href="Test1.smacovilanguage#//@smartcontract.7"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_9atcUV74Eeq-Bo2TLJ4dcA" labelSize="12" borderSize="1" borderSizeComputationExpression="1">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@containerMappings[name='SM_SubTerm']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@containerMappings[name='SM_SubTerm']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="__u_zJ174Eeq-Bo2TLJ4dcA" name="employee">
+        <target xmi:type="smaCoViLanguage:Attribute" href="Test1.smacovilanguage#//@smartcontract.7/@smartcontract.0"/>
+        <semanticElements xmi:type="smaCoViLanguage:Attribute" href="Test1.smacovilanguage#//@smartcontract.7/@smartcontract.0"/>
+        <ownedStyle xmi:type="diagram:Square" uid="__u_zKF74Eeq-Bo2TLJ4dcA" labelSize="12" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@containerMappings[name='SM_SubTerm']/@subNodeMappings[name='SM_subTerm']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@containerMappings[name='SM_SubTerm']/@subNodeMappings[name='SM_subTerm']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_Apr51F75Eeq-Bo2TLJ4dcA" name="must">
+        <target xmi:type="smaCoViLanguage:Deontic" href="Test1.smacovilanguage#//@smartcontract.7/@smartcontract.1"/>
+        <semanticElements xmi:type="smaCoViLanguage:Deontic" href="Test1.smacovilanguage#//@smartcontract.7/@smartcontract.1"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_Apr51V75Eeq-Bo2TLJ4dcA" labelSize="12" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@containerMappings[name='SM_SubTerm']/@subNodeMappings[name='SM_subTerm']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@containerMappings[name='SM_SubTerm']/@subNodeMappings[name='SM_subTerm']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_Fodg9V75Eeq-Bo2TLJ4dcA" name="ExitPunch - punch,timestamp">
+        <target xmi:type="smaCoViLanguage:Aim" href="Test1.smacovilanguage#//@smartcontract.7/@smartcontract.2"/>
+        <semanticElements xmi:type="smaCoViLanguage:Aim" href="Test1.smacovilanguage#//@smartcontract.7/@smartcontract.2"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_Fodg9l75Eeq-Bo2TLJ4dcA" labelSize="12" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@containerMappings[name='SM_SubTerm']/@subNodeMappings[name='SM_subTerm']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@containerMappings[name='SM_SubTerm']/@subNodeMappings[name='SM_subTerm']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_QYoe9l75Eeq-Bo2TLJ4dcA" name="WorkedHours >= 8h">
+        <target xmi:type="smaCoViLanguage:Condition" href="Test1.smacovilanguage#//@smartcontract.7/@smartcontract.3"/>
+        <semanticElements xmi:type="smaCoViLanguage:Condition" href="Test1.smacovilanguage#//@smartcontract.7/@smartcontract.3"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_QYoe9175Eeq-Bo2TLJ4dcA" labelSize="12" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@containerMappings[name='SM_SubTerm']/@subNodeMappings[name='SM_subTerm']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@containerMappings[name='SM_SubTerm']/@subNodeMappings[name='SM_subTerm']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_9awfy174Eeq-Bo2TLJ4dcA" sourceNode="_8zx_MF74Eeq-Bo2TLJ4dcA" targetNode="_9atcUF74Eeq-Bo2TLJ4dcA">
+      <target xmi:type="smaCoViLanguage:And" href="Test1.smacovilanguage#//@smartcontract.6"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_9awfzF74Eeq-Bo2TLJ4dcA" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@edgeMappings[name='SM_next']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_9awfzV74Eeq-Bo2TLJ4dcA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@edgeMappings[name='SM_next']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_wmQCoF8JEeq-Bo2TLJ4dcA" name="once---only" incomingEdges="_wmU7PF8JEeq-Bo2TLJ4dcA" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="smaCoViLanguage:SimpleCondition" href="Test1.smacovilanguage#//@smartcontract.8"/>
+      <semanticElements xmi:type="smaCoViLanguage:SimpleCondition" href="Test1.smacovilanguage#//@smartcontract.8"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_wmQCoV8JEeq-Bo2TLJ4dcA" labelSize="12" showIcon="false" workspacePath="/smacovilanguage.design/icons/SimpleCondition.gif">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_SimpleCondition']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@nodeMappings[name='SM_SimpleCondition']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_wmU7PF8JEeq-Bo2TLJ4dcA" sourceNode="_9atcUF74Eeq-Bo2TLJ4dcA" targetNode="_wmQCoF8JEeq-Bo2TLJ4dcA">
+      <target xmi:type="smaCoViLanguage:Term" href="Test1.smacovilanguage#//@smartcontract.7"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_wmU7PV8JEeq-Bo2TLJ4dcA" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@edgeMappings[name='SM_next']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_wmU7Pl8JEeq-Bo2TLJ4dcA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer/@edgeMappings[name='SM_next']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_sbOZMF70Eeq-Bo2TLJ4dcA"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/smacovilanguage.design/description/smacovilanguage.odesign#//@ownedViewpoints[name='SmaCoViLanguage']/@ownedRepresentations[name='SmaCoViLanguage%20Diagram']/@defaultLayer"/>
+    <target xmi:type="smaCoViLanguage:Main" href="Test1.smacovilanguage#/"/>
   </diagram:DSemanticDiagram>
 </xmi:XMI>
