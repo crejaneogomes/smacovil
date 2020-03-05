@@ -191,7 +191,7 @@
           </propertyValidationRules>
         </validationSet>
       </groups>
-      <groups name="Condition" labelExpression="Group" domainClass="smaCoViLanguage::Condition" semanticCandidateExpression="var:self">
+      <groups name="Condition" labelExpression="Properties" domainClass="smaCoViLanguage::Condition" semanticCandidateExpression="var:self">
         <controls xsi:type="properties:ContainerDescription" name="ConditionContainer">
           <controls xsi:type="properties:TextDescription" name="FirstPartCondition" labelExpression="First Part of Condition" valueExpression="feature:FirstPartCondition">
             <initialOperation>
